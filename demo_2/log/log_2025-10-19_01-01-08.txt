@@ -1,0 +1,87 @@
+🧾 Logging to: log/log_2025-10-19_01-01-08.txt
+📦 Multi-Condition Training + Eval (No Save) Start
+
+
+🧩 Config: short_overlap (window=10, stride=5)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   Data Processing: None
+🚀 Start Training...
+
+[short_overlap] Epoch 01 | loss=0.6526 | train=74.31% | val=81.39%
+[short_overlap] Epoch 02 | loss=0.3313 | train=88.26% | val=88.06%
+[short_overlap] Epoch 03 | loss=0.2514 | train=90.14% | val=88.89%
+[short_overlap] Epoch 04 | loss=0.2180 | train=91.25% | val=88.61%
+[short_overlap] Epoch 05 | loss=0.1968 | train=92.15% | val=92.78%
+[short_overlap] Epoch 06 | loss=0.1627 | train=94.03% | val=93.06%
+[short_overlap] Epoch 07 | loss=0.1361 | train=94.65% | val=95.00%
+[short_overlap] Epoch 08 | loss=0.1195 | train=95.90% | val=95.28%
+[short_overlap] Epoch 09 | loss=0.1055 | train=96.81% | val=96.11%
+[short_overlap] Epoch 10 | loss=0.1001 | train=96.81% | val=95.83%
+[short_overlap] Epoch 11 | loss=0.0884 | train=97.57% | val=96.11%
+[short_overlap] Epoch 12 | loss=0.0810 | train=97.36% | val=96.94%
+[short_overlap] Epoch 13 | loss=0.0779 | train=97.29% | val=97.50%
+[short_overlap] Epoch 14 | loss=0.0780 | train=97.22% | val=97.78%
+[short_overlap] Epoch 15 | loss=0.0605 | train=98.06% | val=97.50%
+[short_overlap] Epoch 16 | loss=0.0577 | train=98.06% | val=96.94%
+[short_overlap] Epoch 17 | loss=0.0458 | train=98.54% | val=97.50%
+[short_overlap] Epoch 18 | loss=0.0485 | train=98.26% | val=98.89%
+[short_overlap] Epoch 19 | loss=0.0358 | train=99.03% | val=98.33%
+[short_overlap] Epoch 20 | loss=0.0334 | train=98.75% | val=98.33%
+[short_overlap] Epoch 21 | loss=0.0391 | train=98.89% | val=99.17%
+[short_overlap] Epoch 22 | loss=0.0258 | train=99.03% | val=98.33%
+[short_overlap] Epoch 23 | loss=0.0322 | train=99.03% | val=98.61%
+[short_overlap] Epoch 24 | loss=0.0335 | train=98.82% | val=98.61%
+[short_overlap] Epoch 25 | loss=0.0224 | train=99.17% | val=99.44%
+[short_overlap] Epoch 26 | loss=0.0226 | train=99.24% | val=98.61%
+[short_overlap] Epoch 27 | loss=0.0222 | train=99.31% | val=98.89%
+[short_overlap] Epoch 28 | loss=0.0189 | train=99.31% | val=98.89%
+[short_overlap] Epoch 29 | loss=0.0129 | train=99.65% | val=99.17%
+[short_overlap] Epoch 30 | loss=0.0164 | train=99.31% | val=98.89%
+⏹ Early stopping triggered after 30 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 99.44% at epoch 25
+
+📊 Train Results
+Overall Accuracy: 99.72%
+cloves         : 100.00%
+cumin          : 99.19%
+oregano        : 100.00%
+
+📊 Test Results
+Overall Accuracy: 66.00%
+cloves         : 100.00%
+cumin          : 0.00%
+oregano        : 100.00%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.24c868eadb47.csv
+🎯 True label: cumin
+🪶 Predicted: cloves ❌
+📊 Window votes:
+cloves         : 120 windows
+cumin          : 0 windows
+oregano        : 0 windows
+🏁 Final Decision: cloves (120 / 120)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.1b9dd5b1eab8.csv
+🎯 True label: cloves
+🪶 Predicted: cloves ✅
+📊 Window votes:
+cloves         : 120 windows
+cumin          : 0 windows
+oregano        : 0 windows
+🏁 Final Decision: cloves (120 / 120)
+──────────────────────────────────────────────
+
+🧩 Config: short_overlap (window=10, stride=5)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler']
+🚀 Start Training...
+
+[short_overlap] Epoch 01 | loss=0.5122 | train=81.88% | val=94.72%
+[short_overlap] Epoch 02 | loss=0.1346 | train=96.67% | val=97.78%
+[short_overlap] Epoch 03 | loss=0.0587 | train=98.06% | val=98.89%
+[short_overlap] Epoch 04 | loss=0.0321 | train=99.03% | val=98.89%
+[short_overlap] Epoch 05 | loss=0.0197 | train=99.44% | val=98.61%
+[short_overlap] Epoch 06 | loss=0.0199 | train=99.38% | val=98.89%
