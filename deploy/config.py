@@ -28,6 +28,7 @@ CHANNEL = {
 
 SELECTED_INDICES = {
     # "all": list(range(12)),  # all 12 channels
+    "first_4": [0, 1, 2, 3],
     "no_ambiance": [0, 1, 2, 3, 4, 5],  # only first 6 (remove environment-related)
     "no_benzene": [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11],  # remove Benzene (index 6)
 }
