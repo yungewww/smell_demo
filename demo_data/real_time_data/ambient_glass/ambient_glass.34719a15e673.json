@@ -1,0 +1,16 @@
+{
+ "__note_stimuli_formatting": "<stimuli><percentage of total mixture> or just <stimuli> if not measuring a mixture.",
+ "__note_time_unit options": "seconds, minutes, milliseconds",
+ "baudrate": 115200,
+ "data_dir": "./data",
+ "date": "2025-10-21 10:43:25.459117",
+ "file": "12-channel.py",
+ "memo": "",
+ "port": "/dev/cu.SLAB_USBtoUART",
+ "start_time": "2025-10-21 10:33:14.007073",
+ "stimuli1": "ambient_glass",
+ "stimuli2": "",
+ "stimuli3": "",
+ "time": "900.0",
+ "time_units": "seconds"
+}
