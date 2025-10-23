@@ -1,0 +1,7 @@
+🧾 Logging to: log/log_2025-10-22_11-54-00.txt
+📦 Multi-Condition Training + Eval (No Save) Start
+
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: None

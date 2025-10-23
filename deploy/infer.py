@@ -12,7 +12,9 @@ from config import CLASS_LABELS, DEVICE
 # ========== Fixed configuration ==========
 # CSV_PATH = "data/cloves/cloves.7050bb0ac364.csv"  # cloves
 # CSV_PATH = "data/cumin/cumin.dcc4be942e86.csv"  # cumin
-CSV_PATH = "data/oregano.real.552189cd9ba7.csv"  # oregano
+# CSV_PATH = "data/oregano.real.552189cd9ba7.csv"  # oregano
+
+CSV_PATH = "data/cumin.today.bd6399a46021.csv"
 
 
 # CKPT_PATH = (

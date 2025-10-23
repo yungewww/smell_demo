@@ -1,0 +1,666 @@
+🧾 Logging to: log/log_2025-10-22_11-56-09.txt
+📦 Multi-Condition Training Start
+
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: None
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9497 | train=55.26% | val=61.93%
+[long_overlap] Epoch 02 | loss=0.8037 | train=63.35% | val=69.32%
+[long_overlap] Epoch 03 | loss=0.7073 | train=71.73% | val=75.00%
+[long_overlap] Epoch 04 | loss=0.6361 | train=74.57% | val=73.86%
+[long_overlap] Epoch 05 | loss=0.5715 | train=76.42% | val=77.27%
+[long_overlap] Epoch 06 | loss=0.5200 | train=77.84% | val=77.27%
+[long_overlap] Epoch 07 | loss=0.4770 | train=79.69% | val=79.55%
+[long_overlap] Epoch 08 | loss=0.4567 | train=80.82% | val=80.11%
+[long_overlap] Epoch 09 | loss=0.4181 | train=84.38% | val=84.09%
+[long_overlap] Epoch 10 | loss=0.4029 | train=83.38% | val=85.23%
+[long_overlap] Epoch 11 | loss=0.3672 | train=84.94% | val=84.66%
+[long_overlap] Epoch 12 | loss=0.3552 | train=85.23% | val=86.93%
+[long_overlap] Epoch 13 | loss=0.3481 | train=86.22% | val=89.77%
+[long_overlap] Epoch 14 | loss=0.3061 | train=87.64% | val=90.34%
+[long_overlap] Epoch 15 | loss=0.2790 | train=89.49% | val=89.77%
+[long_overlap] Epoch 16 | loss=0.2959 | train=87.93% | val=87.50%
+[long_overlap] Epoch 17 | loss=0.2434 | train=91.05% | val=92.05%
+[long_overlap] Epoch 18 | loss=0.2186 | train=91.76% | val=91.48%
+[long_overlap] Epoch 19 | loss=0.1961 | train=93.47% | val=94.32%
+[long_overlap] Epoch 20 | loss=0.1832 | train=93.47% | val=92.05%
+[long_overlap] Epoch 21 | loss=0.1885 | train=92.61% | val=90.91%
+[long_overlap] Epoch 22 | loss=0.1745 | train=94.46% | val=92.05%
+[long_overlap] Epoch 23 | loss=0.1389 | train=95.45% | val=92.05%
+[long_overlap] Epoch 24 | loss=0.1361 | train=94.03% | val=96.02%
+[long_overlap] Epoch 25 | loss=0.1082 | train=96.88% | val=96.02%
+[long_overlap] Epoch 26 | loss=0.0984 | train=96.45% | val=94.32%
+[long_overlap] Epoch 27 | loss=0.0791 | train=98.01% | val=96.02%
+[long_overlap] Epoch 28 | loss=0.0713 | train=97.44% | val=97.16%
+[long_overlap] Epoch 29 | loss=0.0607 | train=98.86% | val=95.45%
+[long_overlap] Epoch 30 | loss=0.0680 | train=98.15% | val=97.16%
+[long_overlap] Epoch 31 | loss=0.0665 | train=97.59% | val=96.02%
+[long_overlap] Epoch 32 | loss=0.0462 | train=99.01% | val=95.45%
+[long_overlap] Epoch 33 | loss=0.0710 | train=97.44% | val=94.32%
+⏹ Early stopping triggered after 33 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 97.16% at epoch 28
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procnone_20251022_115621.pt
+
+📊 Train Results
+Overall Accuracy: 96.16%
+cloves         : 90.23%
+cumin          : 98.97%
+oregano        : 100.00%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['standard_scaler']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.8748 | train=62.64% | val=75.00%
+[long_overlap] Epoch 02 | loss=0.5928 | train=77.56% | val=75.00%
+[long_overlap] Epoch 03 | loss=0.5118 | train=80.54% | val=77.27%
+[long_overlap] Epoch 04 | loss=0.4647 | train=82.39% | val=79.55%
+[long_overlap] Epoch 05 | loss=0.4212 | train=84.09% | val=81.82%
+[long_overlap] Epoch 06 | loss=0.4082 | train=83.95% | val=81.25%
+[long_overlap] Epoch 07 | loss=0.3589 | train=85.65% | val=87.50%
+[long_overlap] Epoch 08 | loss=0.3281 | train=88.07% | val=85.23%
+[long_overlap] Epoch 09 | loss=0.3240 | train=87.50% | val=89.20%
+[long_overlap] Epoch 10 | loss=0.2708 | train=89.49% | val=90.91%
+[long_overlap] Epoch 11 | loss=0.2717 | train=88.35% | val=90.34%
+[long_overlap] Epoch 12 | loss=0.2242 | train=91.90% | val=93.75%
+[long_overlap] Epoch 13 | loss=0.2096 | train=92.05% | val=92.61%
+[long_overlap] Epoch 14 | loss=0.1924 | train=92.90% | val=95.45%
+[long_overlap] Epoch 15 | loss=0.1906 | train=93.04% | val=94.32%
+[long_overlap] Epoch 16 | loss=0.1536 | train=95.31% | val=97.16%
+[long_overlap] Epoch 17 | loss=0.1174 | train=96.59% | val=97.73%
+[long_overlap] Epoch 18 | loss=0.0874 | train=98.44% | val=97.73%
+[long_overlap] Epoch 19 | loss=0.0937 | train=97.73% | val=98.30%
+[long_overlap] Epoch 20 | loss=0.0698 | train=98.15% | val=97.73%
+[long_overlap] Epoch 21 | loss=0.0581 | train=99.01% | val=98.30%
+[long_overlap] Epoch 22 | loss=0.0609 | train=98.30% | val=98.30%
+[long_overlap] Epoch 23 | loss=0.0716 | train=97.44% | val=97.73%
+[long_overlap] Epoch 24 | loss=0.0458 | train=99.01% | val=98.30%
+⏹ Early stopping triggered after 24 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 98.30% at epoch 19
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_20251022_115629.pt
+
+📊 Train Results
+Overall Accuracy: 99.72%
+cloves         : 99.61%
+cumin          : 100.00%
+oregano        : 99.60%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['diff_data_like']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9856 | train=46.43% | val=57.14%
+[long_overlap] Epoch 02 | loss=0.8612 | train=60.27% | val=66.86%
+[long_overlap] Epoch 03 | loss=0.7543 | train=66.67% | val=67.43%
+[long_overlap] Epoch 04 | loss=0.6796 | train=70.83% | val=72.57%
+[long_overlap] Epoch 05 | loss=0.6482 | train=73.51% | val=70.29%
+[long_overlap] Epoch 06 | loss=0.6040 | train=74.26% | val=69.14%
+[long_overlap] Epoch 07 | loss=0.5619 | train=77.68% | val=77.14%
+[long_overlap] Epoch 08 | loss=0.5541 | train=77.98% | val=78.29%
+[long_overlap] Epoch 09 | loss=0.4932 | train=82.59% | val=80.00%
+[long_overlap] Epoch 10 | loss=0.4678 | train=84.08% | val=77.14%
+[long_overlap] Epoch 11 | loss=0.4576 | train=82.74% | val=79.43%
+[long_overlap] Epoch 12 | loss=0.4263 | train=83.93% | val=80.57%
+[long_overlap] Epoch 13 | loss=0.4202 | train=83.18% | val=83.43%
+[long_overlap] Epoch 14 | loss=0.4158 | train=82.74% | val=80.00%
+[long_overlap] Epoch 15 | loss=0.4091 | train=84.23% | val=84.00%
+[long_overlap] Epoch 16 | loss=0.3629 | train=85.57% | val=82.29%
+[long_overlap] Epoch 17 | loss=0.3700 | train=86.01% | val=85.71%
+[long_overlap] Epoch 18 | loss=0.3310 | train=87.50% | val=86.29%
+[long_overlap] Epoch 19 | loss=0.3128 | train=87.95% | val=85.71%
+[long_overlap] Epoch 20 | loss=0.3094 | train=88.10% | val=85.71%
+[long_overlap] Epoch 21 | loss=0.3133 | train=87.95% | val=87.43%
+[long_overlap] Epoch 22 | loss=0.2819 | train=89.88% | val=85.14%
+[long_overlap] Epoch 23 | loss=0.2761 | train=88.54% | val=85.71%
+[long_overlap] Epoch 24 | loss=0.2515 | train=90.77% | val=86.29%
+[long_overlap] Epoch 25 | loss=0.2640 | train=89.88% | val=88.00%
+[long_overlap] Epoch 26 | loss=0.2641 | train=89.88% | val=87.43%
+[long_overlap] Epoch 27 | loss=0.2430 | train=91.82% | val=88.00%
+[long_overlap] Epoch 28 | loss=0.2420 | train=90.48% | val=88.00%
+[long_overlap] Epoch 29 | loss=0.2358 | train=91.82% | val=87.43%
+[long_overlap] Epoch 30 | loss=0.2365 | train=91.22% | val=85.71%
+⏹ Early stopping triggered after 30 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 88.00% at epoch 25
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procdiff_data_like_20251022_115639.pt
+
+📊 Train Results
+Overall Accuracy: 94.05%
+cloves         : 90.53%
+cumin          : 96.95%
+oregano        : 95.26%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0832 | train=39.35% | val=39.20%
+[long_overlap] Epoch 02 | loss=1.0391 | train=40.77% | val=47.16%
+[long_overlap] Epoch 03 | loss=0.9993 | train=48.15% | val=55.11%
+[long_overlap] Epoch 04 | loss=0.9380 | train=54.55% | val=61.93%
+[long_overlap] Epoch 05 | loss=0.8649 | train=60.23% | val=60.80%
+[long_overlap] Epoch 06 | loss=0.7671 | train=66.34% | val=67.05%
+[long_overlap] Epoch 07 | loss=0.6868 | train=69.89% | val=65.34%
+[long_overlap] Epoch 08 | loss=0.6394 | train=73.72% | val=73.86%
+[long_overlap] Epoch 09 | loss=0.5853 | train=75.00% | val=69.32%
+[long_overlap] Epoch 10 | loss=0.5596 | train=75.99% | val=63.64%
+[long_overlap] Epoch 11 | loss=0.5346 | train=75.85% | val=73.86%
+[long_overlap] Epoch 12 | loss=0.5192 | train=78.12% | val=73.30%
+[long_overlap] Epoch 13 | loss=0.4948 | train=76.85% | val=75.00%
+[long_overlap] Epoch 14 | loss=0.4662 | train=79.40% | val=71.59%
+[long_overlap] Epoch 15 | loss=0.4888 | train=78.69% | val=72.73%
+[long_overlap] Epoch 16 | loss=0.4352 | train=80.40% | val=75.57%
+[long_overlap] Epoch 17 | loss=0.4318 | train=80.82% | val=74.43%
+[long_overlap] Epoch 18 | loss=0.4069 | train=81.53% | val=72.16%
+[long_overlap] Epoch 19 | loss=0.3649 | train=85.80% | val=75.00%
+[long_overlap] Epoch 20 | loss=0.3834 | train=84.09% | val=74.43%
+[long_overlap] Epoch 21 | loss=0.3578 | train=84.52% | val=76.14%
+[long_overlap] Epoch 22 | loss=0.3679 | train=84.80% | val=77.27%
+[long_overlap] Epoch 23 | loss=0.3734 | train=85.37% | val=78.98%
+[long_overlap] Epoch 24 | loss=0.3408 | train=86.93% | val=79.55%
+[long_overlap] Epoch 25 | loss=0.3370 | train=86.51% | val=78.41%
+[long_overlap] Epoch 26 | loss=0.3055 | train=87.36% | val=77.84%
+[long_overlap] Epoch 27 | loss=0.3024 | train=88.64% | val=80.11%
+[long_overlap] Epoch 28 | loss=0.2889 | train=88.49% | val=79.55%
+[long_overlap] Epoch 29 | loss=0.3053 | train=87.07% | val=78.98%
+[long_overlap] Epoch 30 | loss=0.3014 | train=89.06% | val=78.41%
+[long_overlap] Epoch 31 | loss=0.2606 | train=90.48% | val=79.55%
+[long_overlap] Epoch 32 | loss=0.2576 | train=89.63% | val=74.43%
+⏹ Early stopping triggered after 32 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 80.11% at epoch 27
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_prochighpass_fft_batch_20251022_115650.pt
+
+📊 Train Results
+Overall Accuracy: 89.91%
+cloves         : 81.64%
+cumin          : 91.33%
+oregano        : 97.22%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['standard_scaler', 'diff_data_like']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9626 | train=53.42% | val=65.71%
+[long_overlap] Epoch 02 | loss=0.7498 | train=67.86% | val=69.14%
+[long_overlap] Epoch 03 | loss=0.6490 | train=73.07% | val=76.00%
+[long_overlap] Epoch 04 | loss=0.5722 | train=77.23% | val=76.57%
+[long_overlap] Epoch 05 | loss=0.5232 | train=80.21% | val=76.57%
+[long_overlap] Epoch 06 | loss=0.4710 | train=81.10% | val=81.71%
+[long_overlap] Epoch 07 | loss=0.4345 | train=84.23% | val=81.71%
+[long_overlap] Epoch 08 | loss=0.4273 | train=84.38% | val=82.86%
+[long_overlap] Epoch 09 | loss=0.3758 | train=86.76% | val=81.14%
+[long_overlap] Epoch 10 | loss=0.3555 | train=86.61% | val=84.00%
+[long_overlap] Epoch 11 | loss=0.3562 | train=85.57% | val=86.86%
+[long_overlap] Epoch 12 | loss=0.3298 | train=87.95% | val=86.29%
+[long_overlap] Epoch 13 | loss=0.3081 | train=90.18% | val=85.71%
+[long_overlap] Epoch 14 | loss=0.3111 | train=88.54% | val=90.29%
+[long_overlap] Epoch 15 | loss=0.2776 | train=90.33% | val=90.86%
+[long_overlap] Epoch 16 | loss=0.2922 | train=89.88% | val=88.57%
+[long_overlap] Epoch 17 | loss=0.2814 | train=90.18% | val=92.57%
+[long_overlap] Epoch 18 | loss=0.2541 | train=90.77% | val=92.57%
+[long_overlap] Epoch 19 | loss=0.2337 | train=91.22% | val=93.14%
+[long_overlap] Epoch 20 | loss=0.2368 | train=92.56% | val=90.29%
+[long_overlap] Epoch 21 | loss=0.2382 | train=91.52% | val=92.00%
+[long_overlap] Epoch 22 | loss=0.2106 | train=92.71% | val=92.00%
+[long_overlap] Epoch 23 | loss=0.2050 | train=92.86% | val=91.43%
+[long_overlap] Epoch 24 | loss=0.2091 | train=92.56% | val=93.71%
+[long_overlap] Epoch 25 | loss=0.1839 | train=94.49% | val=91.43%
+[long_overlap] Epoch 26 | loss=0.1623 | train=95.24% | val=93.14%
+[long_overlap] Epoch 27 | loss=0.1582 | train=94.94% | val=93.14%
+[long_overlap] Epoch 28 | loss=0.1620 | train=94.20% | val=94.29%
+[long_overlap] Epoch 29 | loss=0.1356 | train=94.79% | val=91.43%
+[long_overlap] Epoch 30 | loss=0.1375 | train=94.94% | val=90.86%
+[long_overlap] Epoch 31 | loss=0.1181 | train=95.54% | val=93.71%
+[long_overlap] Epoch 32 | loss=0.1317 | train=95.68% | val=92.57%
+[long_overlap] Epoch 33 | loss=0.1160 | train=97.02% | val=92.57%
+⏹ Early stopping triggered after 33 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 94.29% at epoch 28
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_diff_data_like_20251022_115700.pt
+
+📊 Train Results
+Overall Accuracy: 97.62%
+cloves         : 97.95%
+cumin          : 96.45%
+oregano        : 98.27%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['standard_scaler', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0985 | train=38.92% | val=43.18%
+[long_overlap] Epoch 02 | loss=1.0224 | train=51.99% | val=53.41%
+[long_overlap] Epoch 03 | loss=0.8930 | train=57.39% | val=52.84%
+[long_overlap] Epoch 04 | loss=0.8301 | train=59.52% | val=56.82%
+[long_overlap] Epoch 05 | loss=0.7739 | train=65.20% | val=53.98%
+[long_overlap] Epoch 06 | loss=0.7393 | train=63.07% | val=69.89%
+[long_overlap] Epoch 07 | loss=0.6960 | train=70.60% | val=66.48%
+[long_overlap] Epoch 08 | loss=0.6555 | train=70.03% | val=69.89%
+[long_overlap] Epoch 09 | loss=0.6151 | train=74.43% | val=72.16%
+[long_overlap] Epoch 10 | loss=0.5896 | train=75.85% | val=71.02%
+[long_overlap] Epoch 11 | loss=0.5771 | train=75.00% | val=73.30%
+[long_overlap] Epoch 12 | loss=0.5497 | train=78.12% | val=72.73%
+[long_overlap] Epoch 13 | loss=0.5391 | train=78.27% | val=72.73%
+[long_overlap] Epoch 14 | loss=0.5274 | train=77.13% | val=75.00%
+[long_overlap] Epoch 15 | loss=0.5077 | train=80.26% | val=77.27%
+[long_overlap] Epoch 16 | loss=0.4987 | train=79.26% | val=74.43%
+[long_overlap] Epoch 17 | loss=0.4679 | train=81.96% | val=73.86%
+[long_overlap] Epoch 18 | loss=0.4511 | train=84.23% | val=74.43%
+[long_overlap] Epoch 19 | loss=0.4726 | train=82.24% | val=77.27%
+[long_overlap] Epoch 20 | loss=0.4609 | train=82.24% | val=75.57%
+⏹ Early stopping triggered after 20 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 77.27% at epoch 15
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_highpass_fft_batch_20251022_115707.pt
+
+📊 Train Results
+Overall Accuracy: 85.51%
+cloves         : 79.38%
+cumin          : 82.99%
+oregano        : 93.68%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['diff_data_like', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0815 | train=40.48% | val=40.00%
+[long_overlap] Epoch 02 | loss=1.0394 | train=44.05% | val=39.43%
+[long_overlap] Epoch 03 | loss=1.0335 | train=45.24% | val=37.14%
+[long_overlap] Epoch 04 | loss=1.0172 | train=46.88% | val=42.86%
+[long_overlap] Epoch 05 | loss=1.0002 | train=48.96% | val=42.86%
+[long_overlap] Epoch 06 | loss=0.9857 | train=51.93% | val=44.00%
+[long_overlap] Epoch 07 | loss=0.9627 | train=52.38% | val=45.71%
+[long_overlap] Epoch 08 | loss=0.9337 | train=53.87% | val=46.86%
+[long_overlap] Epoch 09 | loss=0.9104 | train=54.76% | val=47.43%
+[long_overlap] Epoch 10 | loss=0.8969 | train=54.02% | val=52.00%
+[long_overlap] Epoch 11 | loss=0.8860 | train=53.87% | val=47.43%
+[long_overlap] Epoch 12 | loss=0.8629 | train=54.32% | val=47.43%
+[long_overlap] Epoch 13 | loss=0.8696 | train=53.12% | val=49.71%
+[long_overlap] Epoch 14 | loss=0.8528 | train=54.02% | val=48.00%
+[long_overlap] Epoch 15 | loss=0.8322 | train=57.29% | val=50.29%
+⏹ Early stopping triggered after 15 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 52.00% at epoch 10
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procdiff_data_like_highpass_fft_batch_20251022_115712.pt
+
+📊 Train Results
+Overall Accuracy: 54.46%
+cloves         : 75.81%
+cumin          : 65.10%
+oregano        : 22.84%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['standard_scaler', 'diff_data_like', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0987 | train=38.10% | val=48.57%
+[long_overlap] Epoch 02 | loss=1.0694 | train=42.86% | val=46.29%
+[long_overlap] Epoch 03 | loss=1.0364 | train=43.30% | val=48.00%
+[long_overlap] Epoch 04 | loss=0.9848 | train=48.07% | val=42.86%
+[long_overlap] Epoch 05 | loss=0.9594 | train=48.36% | val=44.00%
+[long_overlap] Epoch 06 | loss=0.9511 | train=49.70% | val=42.86%
+⏹ Early stopping triggered after 6 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 48.57% at epoch 1
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_diff_data_like_highpass_fft_batch_20251022_115714.pt
+
+📊 Train Results
+Overall Accuracy: 49.55%
+cloves         : 82.40%
+cumin          : 4.12%
+oregano        : 52.19%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: None
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0203 | train=47.87% | val=60.23%
+[long_overlap] Epoch 02 | loss=0.8277 | train=63.78% | val=71.59%
+[long_overlap] Epoch 03 | loss=0.7439 | train=71.59% | val=73.86%
+[long_overlap] Epoch 04 | loss=0.6687 | train=73.86% | val=76.70%
+[long_overlap] Epoch 05 | loss=0.6179 | train=74.57% | val=73.30%
+[long_overlap] Epoch 06 | loss=0.5674 | train=76.85% | val=76.70%
+[long_overlap] Epoch 07 | loss=0.5236 | train=75.99% | val=78.98%
+[long_overlap] Epoch 08 | loss=0.4744 | train=81.25% | val=81.25%
+[long_overlap] Epoch 09 | loss=0.4407 | train=81.53% | val=81.82%
+[long_overlap] Epoch 10 | loss=0.4057 | train=83.38% | val=83.52%
+[long_overlap] Epoch 11 | loss=0.3754 | train=84.52% | val=82.95%
+[long_overlap] Epoch 12 | loss=0.3602 | train=84.80% | val=82.95%
+[long_overlap] Epoch 13 | loss=0.3571 | train=83.66% | val=86.36%
+[long_overlap] Epoch 14 | loss=0.3153 | train=87.78% | val=87.50%
+[long_overlap] Epoch 15 | loss=0.2966 | train=89.06% | val=89.77%
+[long_overlap] Epoch 16 | loss=0.2735 | train=88.64% | val=89.20%
+[long_overlap] Epoch 17 | loss=0.2609 | train=90.06% | val=88.07%
+[long_overlap] Epoch 18 | loss=0.2411 | train=91.90% | val=90.91%
+[long_overlap] Epoch 19 | loss=0.2243 | train=91.62% | val=90.34%
+[long_overlap] Epoch 20 | loss=0.2179 | train=92.33% | val=94.32%
+[long_overlap] Epoch 21 | loss=0.1898 | train=93.75% | val=90.91%
+[long_overlap] Epoch 22 | loss=0.1751 | train=94.32% | val=90.91%
+[long_overlap] Epoch 23 | loss=0.1594 | train=94.74% | val=93.75%
+[long_overlap] Epoch 24 | loss=0.1308 | train=96.02% | val=93.18%
+[long_overlap] Epoch 25 | loss=0.1376 | train=95.60% | val=94.32%
+⏹ Early stopping triggered after 25 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 94.32% at epoch 20
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procnone_20251022_115723.pt
+
+📊 Train Results
+Overall Accuracy: 96.73%
+cloves         : 94.14%
+cumin          : 95.92%
+oregano        : 100.00%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.8455 | train=68.75% | val=76.70%
+[long_overlap] Epoch 02 | loss=0.5851 | train=78.41% | val=77.27%
+[long_overlap] Epoch 03 | loss=0.5244 | train=78.69% | val=80.11%
+[long_overlap] Epoch 04 | loss=0.4874 | train=81.68% | val=81.25%
+[long_overlap] Epoch 05 | loss=0.4544 | train=82.39% | val=84.66%
+[long_overlap] Epoch 06 | loss=0.4013 | train=84.52% | val=82.95%
+[long_overlap] Epoch 07 | loss=0.3798 | train=86.08% | val=84.66%
+[long_overlap] Epoch 08 | loss=0.3389 | train=86.93% | val=85.80%
+[long_overlap] Epoch 09 | loss=0.3137 | train=87.50% | val=85.80%
+[long_overlap] Epoch 10 | loss=0.2919 | train=87.50% | val=87.50%
+[long_overlap] Epoch 11 | loss=0.2695 | train=88.92% | val=90.34%
+[long_overlap] Epoch 12 | loss=0.2294 | train=91.19% | val=88.64%
+[long_overlap] Epoch 13 | loss=0.2183 | train=92.05% | val=89.77%
+[long_overlap] Epoch 14 | loss=0.1958 | train=92.90% | val=94.32%
+[long_overlap] Epoch 15 | loss=0.1748 | train=94.18% | val=95.45%
+[long_overlap] Epoch 16 | loss=0.1584 | train=95.31% | val=96.02%
+[long_overlap] Epoch 17 | loss=0.1268 | train=96.02% | val=97.73%
+[long_overlap] Epoch 18 | loss=0.1307 | train=95.74% | val=96.02%
+[long_overlap] Epoch 19 | loss=0.1114 | train=96.73% | val=96.59%
+[long_overlap] Epoch 20 | loss=0.0951 | train=97.16% | val=94.89%
+[long_overlap] Epoch 21 | loss=0.0701 | train=98.30% | val=98.30%
+[long_overlap] Epoch 22 | loss=0.0583 | train=98.30% | val=98.86%
+[long_overlap] Epoch 23 | loss=0.0569 | train=98.30% | val=97.16%
+[long_overlap] Epoch 24 | loss=0.0481 | train=98.72% | val=96.02%
+[long_overlap] Epoch 25 | loss=0.0531 | train=98.72% | val=98.30%
+[long_overlap] Epoch 26 | loss=0.0361 | train=98.86% | val=99.43%
+[long_overlap] Epoch 27 | loss=0.0368 | train=99.15% | val=98.30%
+[long_overlap] Epoch 28 | loss=0.0417 | train=98.86% | val=98.30%
+[long_overlap] Epoch 29 | loss=0.0299 | train=99.29% | val=98.86%
+[long_overlap] Epoch 30 | loss=0.0267 | train=99.43% | val=100.00%
+[long_overlap] Epoch 31 | loss=0.0233 | train=99.57% | val=100.00%
+[long_overlap] Epoch 32 | loss=0.0193 | train=99.57% | val=99.43%
+[long_overlap] Epoch 33 | loss=0.0184 | train=99.15% | val=100.00%
+[long_overlap] Epoch 34 | loss=0.0225 | train=99.29% | val=98.86%
+[long_overlap] Epoch 35 | loss=0.0168 | train=99.29% | val=99.43%
+⏹ Early stopping triggered after 35 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 100.00% at epoch 30
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_20251022_115734.pt
+
+📊 Train Results
+Overall Accuracy: 99.15%
+cloves         : 100.00%
+cumin          : 97.95%
+oregano        : 99.21%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['diff_data_like']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9958 | train=50.00% | val=56.57%
+[long_overlap] Epoch 02 | loss=0.8237 | train=61.31% | val=64.00%
+[long_overlap] Epoch 03 | loss=0.7095 | train=69.20% | val=65.71%
+[long_overlap] Epoch 04 | loss=0.6669 | train=71.28% | val=72.57%
+[long_overlap] Epoch 05 | loss=0.6241 | train=72.02% | val=73.71%
+[long_overlap] Epoch 06 | loss=0.5771 | train=73.96% | val=76.00%
+[long_overlap] Epoch 07 | loss=0.5614 | train=77.53% | val=74.86%
+[long_overlap] Epoch 08 | loss=0.5193 | train=78.87% | val=69.71%
+[long_overlap] Epoch 09 | loss=0.5083 | train=78.12% | val=79.43%
+[long_overlap] Epoch 10 | loss=0.4563 | train=81.55% | val=82.86%
+[long_overlap] Epoch 11 | loss=0.4335 | train=83.18% | val=84.00%
+[long_overlap] Epoch 12 | loss=0.4158 | train=82.74% | val=84.00%
+[long_overlap] Epoch 13 | loss=0.3942 | train=86.01% | val=84.00%
+[long_overlap] Epoch 14 | loss=0.3680 | train=85.86% | val=86.29%
+[long_overlap] Epoch 15 | loss=0.3797 | train=85.12% | val=85.14%
+[long_overlap] Epoch 16 | loss=0.3476 | train=85.12% | val=86.86%
+[long_overlap] Epoch 17 | loss=0.3449 | train=86.31% | val=88.00%
+[long_overlap] Epoch 18 | loss=0.3307 | train=86.76% | val=86.86%
+[long_overlap] Epoch 19 | loss=0.2954 | train=88.39% | val=85.71%
+[long_overlap] Epoch 20 | loss=0.3067 | train=87.80% | val=88.57%
+[long_overlap] Epoch 21 | loss=0.2951 | train=88.24% | val=84.57%
+[long_overlap] Epoch 22 | loss=0.2904 | train=88.84% | val=89.71%
+[long_overlap] Epoch 23 | loss=0.2621 | train=90.03% | val=88.00%
+[long_overlap] Epoch 24 | loss=0.2781 | train=89.29% | val=85.71%
+[long_overlap] Epoch 25 | loss=0.2821 | train=88.84% | val=89.71%
+[long_overlap] Epoch 26 | loss=0.2700 | train=88.99% | val=78.29%
+[long_overlap] Epoch 27 | loss=0.2719 | train=89.43% | val=88.57%
+⏹ Early stopping triggered after 27 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 89.71% at epoch 22
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procdiff_data_like_20251022_115743.pt
+
+📊 Train Results
+Overall Accuracy: 93.01%
+cloves         : 93.03%
+cumin          : 90.82%
+oregano        : 94.83%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0740 | train=38.07% | val=43.75%
+[long_overlap] Epoch 02 | loss=0.9853 | train=51.14% | val=57.95%
+[long_overlap] Epoch 03 | loss=0.8994 | train=59.09% | val=59.09%
+[long_overlap] Epoch 04 | loss=0.8326 | train=60.37% | val=65.91%
+[long_overlap] Epoch 05 | loss=0.7500 | train=66.90% | val=72.73%
+[long_overlap] Epoch 06 | loss=0.7175 | train=66.62% | val=70.45%
+[long_overlap] Epoch 07 | loss=0.6815 | train=69.60% | val=71.02%
+[long_overlap] Epoch 08 | loss=0.6256 | train=72.59% | val=71.59%
+[long_overlap] Epoch 09 | loss=0.5925 | train=72.59% | val=71.59%
+[long_overlap] Epoch 10 | loss=0.5721 | train=74.43% | val=70.45%
+⏹ Early stopping triggered after 10 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 72.73% at epoch 5
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_prochighpass_fft_batch_20251022_115747.pt
+
+📊 Train Results
+Overall Accuracy: 75.28%
+cloves         : 74.61%
+cumin          : 53.06%
+oregano        : 93.25%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler', 'diff_data_like']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9741 | train=51.79% | val=61.71%
+[long_overlap] Epoch 02 | loss=0.7551 | train=69.20% | val=69.71%
+[long_overlap] Epoch 03 | loss=0.6072 | train=78.87% | val=77.14%
+[long_overlap] Epoch 04 | loss=0.5214 | train=80.65% | val=77.71%
+[long_overlap] Epoch 05 | loss=0.4690 | train=81.40% | val=83.43%
+[long_overlap] Epoch 06 | loss=0.4243 | train=84.38% | val=80.00%
+[long_overlap] Epoch 07 | loss=0.3968 | train=86.16% | val=82.29%
+[long_overlap] Epoch 08 | loss=0.3645 | train=86.16% | val=81.71%
+[long_overlap] Epoch 09 | loss=0.3343 | train=88.54% | val=84.00%
+[long_overlap] Epoch 10 | loss=0.3289 | train=88.54% | val=84.57%
+[long_overlap] Epoch 11 | loss=0.3092 | train=89.43% | val=82.86%
+[long_overlap] Epoch 12 | loss=0.3186 | train=88.54% | val=84.57%
+[long_overlap] Epoch 13 | loss=0.2725 | train=90.48% | val=88.00%
+[long_overlap] Epoch 14 | loss=0.2644 | train=91.07% | val=88.00%
+[long_overlap] Epoch 15 | loss=0.2610 | train=91.07% | val=90.86%
+[long_overlap] Epoch 16 | loss=0.2384 | train=91.96% | val=90.29%
+[long_overlap] Epoch 17 | loss=0.2219 | train=92.56% | val=92.00%
+[long_overlap] Epoch 18 | loss=0.2161 | train=93.30% | val=90.86%
+[long_overlap] Epoch 19 | loss=0.2197 | train=91.82% | val=89.71%
+[long_overlap] Epoch 20 | loss=0.2204 | train=92.26% | val=92.00%
+[long_overlap] Epoch 21 | loss=0.1893 | train=94.20% | val=92.57%
+[long_overlap] Epoch 22 | loss=0.2009 | train=93.30% | val=93.14%
+[long_overlap] Epoch 23 | loss=0.1728 | train=94.64% | val=93.14%
+[long_overlap] Epoch 24 | loss=0.1613 | train=94.79% | val=93.71%
+[long_overlap] Epoch 25 | loss=0.1557 | train=95.39% | val=92.57%
+[long_overlap] Epoch 26 | loss=0.1776 | train=94.05% | val=93.14%
+[long_overlap] Epoch 27 | loss=0.1390 | train=95.09% | val=93.14%
+[long_overlap] Epoch 28 | loss=0.1393 | train=95.68% | val=94.86%
+[long_overlap] Epoch 29 | loss=0.1557 | train=94.79% | val=94.29%
+[long_overlap] Epoch 30 | loss=0.1179 | train=96.58% | val=93.14%
+[long_overlap] Epoch 31 | loss=0.1231 | train=96.58% | val=93.71%
+[long_overlap] Epoch 32 | loss=0.1110 | train=97.17% | val=95.43%
+[long_overlap] Epoch 33 | loss=0.1141 | train=96.88% | val=93.71%
+[long_overlap] Epoch 34 | loss=0.0996 | train=96.88% | val=94.86%
+[long_overlap] Epoch 35 | loss=0.0890 | train=97.62% | val=94.86%
+[long_overlap] Epoch 36 | loss=0.0746 | train=97.92% | val=94.86%
+[long_overlap] Epoch 37 | loss=0.0836 | train=97.92% | val=94.29%
+⏹ Early stopping triggered after 37 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 95.43% at epoch 32
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_diff_data_like_20251022_115759.pt
+
+📊 Train Results
+Overall Accuracy: 97.02%
+cloves         : 95.49%
+cumin          : 98.97%
+oregano        : 97.01%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0453 | train=46.59% | val=50.00%
+[long_overlap] Epoch 02 | loss=0.9135 | train=52.84% | val=51.14%
+[long_overlap] Epoch 03 | loss=0.7575 | train=61.65% | val=68.75%
+[long_overlap] Epoch 04 | loss=0.6557 | train=68.32% | val=72.73%
+[long_overlap] Epoch 05 | loss=0.6035 | train=69.89% | val=71.02%
+[long_overlap] Epoch 06 | loss=0.5694 | train=74.15% | val=74.43%
+[long_overlap] Epoch 07 | loss=0.5484 | train=74.86% | val=69.89%
+[long_overlap] Epoch 08 | loss=0.5049 | train=77.13% | val=73.30%
+[long_overlap] Epoch 09 | loss=0.4802 | train=78.98% | val=72.73%
+[long_overlap] Epoch 10 | loss=0.4523 | train=80.68% | val=77.27%
+[long_overlap] Epoch 11 | loss=0.4417 | train=80.97% | val=77.84%
+[long_overlap] Epoch 12 | loss=0.4173 | train=82.67% | val=78.98%
+[long_overlap] Epoch 13 | loss=0.4167 | train=81.96% | val=73.30%
+[long_overlap] Epoch 14 | loss=0.3957 | train=83.66% | val=73.86%
+[long_overlap] Epoch 15 | loss=0.3643 | train=85.80% | val=77.84%
+[long_overlap] Epoch 16 | loss=0.3463 | train=86.36% | val=78.41%
+[long_overlap] Epoch 17 | loss=0.3513 | train=86.51% | val=77.27%
+⏹ Early stopping triggered after 17 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 78.98% at epoch 12
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_highpass_fft_batch_20251022_115805.pt
+
+📊 Train Results
+Overall Accuracy: 87.78%
+cloves         : 73.05%
+cumin          : 95.41%
+oregano        : 96.83%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['diff_data_like', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0791 | train=42.11% | val=38.86%
+[long_overlap] Epoch 02 | loss=1.0072 | train=53.87% | val=52.57%
+[long_overlap] Epoch 03 | loss=0.9368 | train=56.85% | val=52.57%
+[long_overlap] Epoch 04 | loss=0.8531 | train=61.46% | val=52.00%
+[long_overlap] Epoch 05 | loss=0.8382 | train=61.16% | val=55.43%
+[long_overlap] Epoch 06 | loss=0.8053 | train=61.90% | val=54.86%
+[long_overlap] Epoch 07 | loss=0.7953 | train=61.76% | val=53.71%
+[long_overlap] Epoch 08 | loss=0.7849 | train=62.80% | val=54.86%
+[long_overlap] Epoch 09 | loss=0.7691 | train=62.65% | val=56.00%
+[long_overlap] Epoch 10 | loss=0.7828 | train=61.16% | val=55.43%
+[long_overlap] Epoch 11 | loss=0.7540 | train=61.61% | val=57.71%
+[long_overlap] Epoch 12 | loss=0.7431 | train=60.86% | val=56.00%
+[long_overlap] Epoch 13 | loss=0.7375 | train=63.10% | val=55.43%
+[long_overlap] Epoch 14 | loss=0.7382 | train=63.24% | val=56.57%
+[long_overlap] Epoch 15 | loss=0.7582 | train=63.24% | val=55.43%
+[long_overlap] Epoch 16 | loss=0.7272 | train=63.99% | val=61.71%
+[long_overlap] Epoch 17 | loss=0.7010 | train=67.11% | val=59.43%
+[long_overlap] Epoch 18 | loss=0.6850 | train=66.22% | val=63.43%
+[long_overlap] Epoch 19 | loss=0.6406 | train=69.79% | val=65.14%
+[long_overlap] Epoch 20 | loss=0.6213 | train=67.86% | val=65.14%
+[long_overlap] Epoch 21 | loss=0.6148 | train=70.09% | val=66.86%
+[long_overlap] Epoch 22 | loss=0.5961 | train=70.68% | val=62.86%
+[long_overlap] Epoch 23 | loss=0.5879 | train=70.39% | val=64.00%
+[long_overlap] Epoch 24 | loss=0.5826 | train=70.54% | val=69.71%
+[long_overlap] Epoch 25 | loss=0.5763 | train=70.54% | val=62.29%
+[long_overlap] Epoch 26 | loss=0.5803 | train=70.98% | val=70.86%
+[long_overlap] Epoch 27 | loss=0.5802 | train=72.17% | val=65.71%
+[long_overlap] Epoch 28 | loss=0.5662 | train=72.17% | val=68.57%
+[long_overlap] Epoch 29 | loss=0.5514 | train=73.07% | val=66.29%
+[long_overlap] Epoch 30 | loss=0.5351 | train=74.26% | val=65.14%
+[long_overlap] Epoch 31 | loss=0.5522 | train=74.11% | val=62.29%
+⏹ Early stopping triggered after 31 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 70.86% at epoch 26
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procdiff_data_like_highpass_fft_batch_20251022_115815.pt
+
+📊 Train Results
+Overall Accuracy: 73.36%
+cloves         : 85.14%
+cumin          : 66.32%
+oregano        : 66.52%
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler', 'diff_data_like', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0510 | train=46.73% | val=50.86%
+[long_overlap] Epoch 02 | loss=0.9548 | train=53.42% | val=50.29%
+[long_overlap] Epoch 03 | loss=0.8866 | train=56.70% | val=50.29%
+[long_overlap] Epoch 04 | loss=0.8573 | train=55.95% | val=53.71%
+[long_overlap] Epoch 05 | loss=0.8300 | train=60.86% | val=53.14%
+[long_overlap] Epoch 06 | loss=0.8178 | train=58.78% | val=58.86%
+[long_overlap] Epoch 07 | loss=0.8013 | train=58.93% | val=57.14%
+[long_overlap] Epoch 08 | loss=0.7587 | train=61.01% | val=55.43%
+[long_overlap] Epoch 09 | loss=0.7303 | train=64.29% | val=59.43%
+[long_overlap] Epoch 10 | loss=0.7020 | train=65.48% | val=60.57%
+[long_overlap] Epoch 11 | loss=0.6889 | train=65.77% | val=61.14%
+[long_overlap] Epoch 12 | loss=0.6673 | train=67.56% | val=60.57%
+[long_overlap] Epoch 13 | loss=0.6468 | train=68.30% | val=62.86%
+[long_overlap] Epoch 14 | loss=0.6322 | train=70.54% | val=62.86%
+[long_overlap] Epoch 15 | loss=0.6451 | train=68.30% | val=62.86%
+[long_overlap] Epoch 16 | loss=0.6243 | train=69.35% | val=62.29%
+[long_overlap] Epoch 17 | loss=0.6088 | train=70.68% | val=65.14%
+[long_overlap] Epoch 18 | loss=0.5813 | train=73.36% | val=69.71%
+[long_overlap] Epoch 19 | loss=0.5874 | train=71.73% | val=62.29%
+[long_overlap] Epoch 20 | loss=0.5704 | train=72.77% | val=64.00%
+[long_overlap] Epoch 21 | loss=0.5538 | train=74.11% | val=68.57%
+[long_overlap] Epoch 22 | loss=0.5282 | train=76.04% | val=69.14%
+[long_overlap] Epoch 23 | loss=0.5208 | train=74.11% | val=66.86%
+⏹ Early stopping triggered after 23 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 69.71% at epoch 18
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_diff_data_like_highpass_fft_batch_20251022_115822.pt
+
+📊 Train Results
+Overall Accuracy: 76.04%
+cloves         : 75.20%
+cumin          : 66.50%
+oregano        : 85.15%
+
+
+📈 Summary of All Configs
+────────────────────────────────────────────────────────────
+Config          Channels               Processing                Win    Str    Train(%)  
+------------------------------------------------------------------------------------------
+long_overlap    [0, 1, 2, 3, 4, 5]     none                      60     30     96.16     
+long_overlap    [0, 1, 2, 3, 4, 5]     standard_scaler           60     30     99.72     
+long_overlap    [0, 1, 2, 3, 4, 5]     diff_data_like            60     30     94.05     
+long_overlap    [0, 1, 2, 3, 4, 5]     highpass_fft_batch        60     30     89.91     
+long_overlap    [0, 1, 2, 3, 4, 5]     standard_scaler_diff_data_like 60     30     97.62     
+long_overlap    [0, 1, 2, 3, 4, 5]     standard_scaler_highpass_fft_batch 60     30     85.51     
+long_overlap    [0, 1, 2, 3, 4, 5]     diff_data_like_highpass_fft_batch 60     30     54.46     
+long_overlap    [0, 1, 2, 3, 4, 5]     standard_scaler_diff_data_like_highpass_fft_batch 60     30     49.55     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] none                      60     30     96.73     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] standard_scaler           60     30     99.15     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] diff_data_like            60     30     93.01     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] highpass_fft_batch        60     30     75.28     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] standard_scaler_diff_data_like 60     30     97.02     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] standard_scaler_highpass_fft_batch 60     30     87.78     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] diff_data_like_highpass_fft_batch 60     30     73.36     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] standard_scaler_diff_data_like_highpass_fft_batch 60     30     76.04     
+────────────────────────────────────────────────────────────
+🎉 All training finished.
+📁 Logs saved to: log/log_2025-10-22_11-56-09.txt

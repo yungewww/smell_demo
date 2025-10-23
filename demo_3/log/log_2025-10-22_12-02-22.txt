@@ -1,0 +1,1067 @@
+🧾 Logging to: log/log_2025-10-22_12-02-22.txt
+📦 Multi-Condition Training + Eval (Train + Online Only)
+
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: None
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0006 | train=51.28% | val=59.09%
+[long_overlap] Epoch 02 | loss=0.8286 | train=62.78% | val=72.16%
+[long_overlap] Epoch 03 | loss=0.7557 | train=67.76% | val=72.73%
+[long_overlap] Epoch 04 | loss=0.6848 | train=71.73% | val=73.86%
+[long_overlap] Epoch 05 | loss=0.6042 | train=77.27% | val=76.70%
+[long_overlap] Epoch 06 | loss=0.5619 | train=75.71% | val=80.68%
+[long_overlap] Epoch 07 | loss=0.5176 | train=78.12% | val=83.52%
+[long_overlap] Epoch 08 | loss=0.4744 | train=81.39% | val=83.52%
+[long_overlap] Epoch 09 | loss=0.4537 | train=80.97% | val=84.66%
+[long_overlap] Epoch 10 | loss=0.4184 | train=81.39% | val=83.52%
+[long_overlap] Epoch 11 | loss=0.3952 | train=84.38% | val=85.80%
+[long_overlap] Epoch 12 | loss=0.3701 | train=85.80% | val=84.66%
+[long_overlap] Epoch 13 | loss=0.3471 | train=86.36% | val=86.93%
+[long_overlap] Epoch 14 | loss=0.3409 | train=86.36% | val=87.50%
+[long_overlap] Epoch 15 | loss=0.2991 | train=88.64% | val=88.64%
+[long_overlap] Epoch 16 | loss=0.2818 | train=88.78% | val=90.91%
+[long_overlap] Epoch 17 | loss=0.2649 | train=89.06% | val=89.77%
+[long_overlap] Epoch 18 | loss=0.2428 | train=91.05% | val=92.61%
+[long_overlap] Epoch 19 | loss=0.2419 | train=92.19% | val=92.61%
+[long_overlap] Epoch 20 | loss=0.2367 | train=90.48% | val=90.91%
+[long_overlap] Epoch 21 | loss=0.2226 | train=92.33% | val=93.18%
+[long_overlap] Epoch 22 | loss=0.1779 | train=93.32% | val=94.32%
+[long_overlap] Epoch 23 | loss=0.1543 | train=94.32% | val=94.89%
+[long_overlap] Epoch 24 | loss=0.1569 | train=93.89% | val=94.32%
+[long_overlap] Epoch 25 | loss=0.1414 | train=95.31% | val=95.45%
+[long_overlap] Epoch 26 | loss=0.1185 | train=96.59% | val=95.45%
+[long_overlap] Epoch 27 | loss=0.1094 | train=96.59% | val=96.59%
+[long_overlap] Epoch 28 | loss=0.1097 | train=96.02% | val=95.45%
+[long_overlap] Epoch 29 | loss=0.0983 | train=97.30% | val=94.32%
+[long_overlap] Epoch 30 | loss=0.0821 | train=97.73% | val=96.02%
+[long_overlap] Epoch 31 | loss=0.1024 | train=96.02% | val=96.59%
+[long_overlap] Epoch 32 | loss=0.1008 | train=96.59% | val=95.45%
+⏹ Early stopping triggered after 32 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 96.59% at epoch 27
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procnone_20251022_120233.pt
+
+📊 Train Results
+Overall Accuracy: 95.88%
+cloves         : 88.72%
+cumin          : 100.00%
+oregano        : 100.00%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: cumin ✅
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 63 windows
+oregano        : 0 windows
+🏁 Final Decision: cumin (63 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: cumin ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 63 windows
+oregano        : 0 windows
+🏁 Final Decision: cumin (63 / 63)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['standard_scaler']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.8800 | train=61.79% | val=75.57%
+[long_overlap] Epoch 02 | loss=0.5970 | train=75.85% | val=74.43%
+[long_overlap] Epoch 03 | loss=0.5030 | train=80.97% | val=76.70%
+[long_overlap] Epoch 04 | loss=0.4483 | train=83.66% | val=77.27%
+[long_overlap] Epoch 05 | loss=0.4218 | train=84.23% | val=81.25%
+[long_overlap] Epoch 06 | loss=0.3731 | train=85.65% | val=82.95%
+[long_overlap] Epoch 07 | loss=0.3387 | train=87.64% | val=85.23%
+[long_overlap] Epoch 08 | loss=0.3051 | train=88.92% | val=85.23%
+[long_overlap] Epoch 09 | loss=0.3000 | train=88.78% | val=87.50%
+[long_overlap] Epoch 10 | loss=0.2571 | train=90.77% | val=88.64%
+[long_overlap] Epoch 11 | loss=0.2359 | train=92.05% | val=90.91%
+[long_overlap] Epoch 12 | loss=0.2279 | train=91.62% | val=94.32%
+[long_overlap] Epoch 13 | loss=0.2074 | train=92.61% | val=93.18%
+[long_overlap] Epoch 14 | loss=0.2006 | train=93.75% | val=94.89%
+[long_overlap] Epoch 15 | loss=0.1645 | train=95.17% | val=95.45%
+[long_overlap] Epoch 16 | loss=0.1417 | train=96.02% | val=94.89%
+[long_overlap] Epoch 17 | loss=0.1259 | train=96.31% | val=97.16%
+[long_overlap] Epoch 18 | loss=0.1015 | train=97.44% | val=96.59%
+[long_overlap] Epoch 19 | loss=0.0956 | train=97.59% | val=97.16%
+[long_overlap] Epoch 20 | loss=0.0733 | train=98.01% | val=97.73%
+[long_overlap] Epoch 21 | loss=0.0732 | train=97.73% | val=97.16%
+[long_overlap] Epoch 22 | loss=0.0718 | train=98.15% | val=97.73%
+[long_overlap] Epoch 23 | loss=0.0753 | train=97.44% | val=97.16%
+[long_overlap] Epoch 24 | loss=0.0499 | train=98.30% | val=97.73%
+[long_overlap] Epoch 25 | loss=0.0492 | train=98.44% | val=96.59%
+⏹ Early stopping triggered after 25 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 97.73% at epoch 20
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_20251022_120242.pt
+
+📊 Train Results
+Overall Accuracy: 98.58%
+cloves         : 96.08%
+cumin          : 100.00%
+oregano        : 100.00%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: cumin ✅
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 63 windows
+oregano        : 0 windows
+🏁 Final Decision: cumin (63 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: cumin ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 63 windows
+oregano        : 0 windows
+🏁 Final Decision: cumin (63 / 63)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['diff_data_like']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0531 | train=44.49% | val=58.29%
+[long_overlap] Epoch 02 | loss=0.9354 | train=54.91% | val=62.86%
+[long_overlap] Epoch 03 | loss=0.8208 | train=63.24% | val=62.86%
+[long_overlap] Epoch 04 | loss=0.7242 | train=66.07% | val=72.00%
+[long_overlap] Epoch 05 | loss=0.6591 | train=72.02% | val=74.29%
+[long_overlap] Epoch 06 | loss=0.6108 | train=73.81% | val=73.71%
+[long_overlap] Epoch 07 | loss=0.5758 | train=76.04% | val=77.71%
+[long_overlap] Epoch 08 | loss=0.5320 | train=78.12% | val=78.86%
+[long_overlap] Epoch 09 | loss=0.4757 | train=80.51% | val=82.86%
+[long_overlap] Epoch 10 | loss=0.4721 | train=82.59% | val=82.86%
+[long_overlap] Epoch 11 | loss=0.4322 | train=82.74% | val=75.43%
+[long_overlap] Epoch 12 | loss=0.4072 | train=83.18% | val=84.00%
+[long_overlap] Epoch 13 | loss=0.3701 | train=86.31% | val=86.86%
+[long_overlap] Epoch 14 | loss=0.3744 | train=86.46% | val=86.86%
+[long_overlap] Epoch 15 | loss=0.3538 | train=86.31% | val=87.43%
+[long_overlap] Epoch 16 | loss=0.3209 | train=87.95% | val=86.86%
+[long_overlap] Epoch 17 | loss=0.3149 | train=88.39% | val=85.71%
+[long_overlap] Epoch 18 | loss=0.2938 | train=89.88% | val=89.14%
+[long_overlap] Epoch 19 | loss=0.2715 | train=89.58% | val=89.14%
+[long_overlap] Epoch 20 | loss=0.2596 | train=91.37% | val=88.57%
+[long_overlap] Epoch 21 | loss=0.2353 | train=92.11% | val=88.57%
+[long_overlap] Epoch 22 | loss=0.2421 | train=90.92% | val=89.71%
+[long_overlap] Epoch 23 | loss=0.2111 | train=92.56% | val=89.14%
+[long_overlap] Epoch 24 | loss=0.2048 | train=92.71% | val=88.57%
+[long_overlap] Epoch 25 | loss=0.2068 | train=92.41% | val=90.86%
+[long_overlap] Epoch 26 | loss=0.2115 | train=92.41% | val=89.71%
+[long_overlap] Epoch 27 | loss=0.1923 | train=92.41% | val=86.29%
+[long_overlap] Epoch 28 | loss=0.2000 | train=92.26% | val=89.71%
+[long_overlap] Epoch 29 | loss=0.1954 | train=92.11% | val=91.43%
+[long_overlap] Epoch 30 | loss=0.1860 | train=92.41% | val=88.00%
+[long_overlap] Epoch 31 | loss=0.1725 | train=93.45% | val=89.71%
+[long_overlap] Epoch 32 | loss=0.1699 | train=93.45% | val=91.43%
+[long_overlap] Epoch 33 | loss=0.1601 | train=93.90% | val=88.57%
+[long_overlap] Epoch 34 | loss=0.1683 | train=93.75% | val=88.57%
+⏹ Early stopping triggered after 34 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 91.43% at epoch 29
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procdiff_data_like_20251022_120253.pt
+
+📊 Train Results
+Overall Accuracy: 95.83%
+cloves         : 93.23%
+cumin          : 98.40%
+oregano        : 96.57%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: cloves ❌
+📊 Window votes:
+cloves         : 60 windows
+cumin          : 3 windows
+oregano        : 0 windows
+🏁 Final Decision: cloves (60 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: cumin ❌
+📊 Window votes:
+cloves         : 19 windows
+cumin          : 30 windows
+oregano        : 13 windows
+🏁 Final Decision: cumin (30 / 62)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0778 | train=38.07% | val=44.89%
+[long_overlap] Epoch 02 | loss=1.0400 | train=44.03% | val=44.89%
+[long_overlap] Epoch 03 | loss=1.0094 | train=47.02% | val=47.73%
+[long_overlap] Epoch 04 | loss=0.9767 | train=50.28% | val=57.95%
+[long_overlap] Epoch 05 | loss=0.9230 | train=54.97% | val=64.20%
+[long_overlap] Epoch 06 | loss=0.8317 | train=63.92% | val=68.75%
+[long_overlap] Epoch 07 | loss=0.7592 | train=66.48% | val=69.32%
+[long_overlap] Epoch 08 | loss=0.7036 | train=70.74% | val=71.02%
+[long_overlap] Epoch 09 | loss=0.6206 | train=73.86% | val=72.16%
+[long_overlap] Epoch 10 | loss=0.5755 | train=75.28% | val=72.73%
+[long_overlap] Epoch 11 | loss=0.5454 | train=75.71% | val=73.30%
+[long_overlap] Epoch 12 | loss=0.5471 | train=74.57% | val=67.05%
+[long_overlap] Epoch 13 | loss=0.5609 | train=75.57% | val=71.59%
+[long_overlap] Epoch 14 | loss=0.5521 | train=74.86% | val=72.16%
+[long_overlap] Epoch 15 | loss=0.5076 | train=76.85% | val=75.57%
+[long_overlap] Epoch 16 | loss=0.4967 | train=78.27% | val=72.16%
+[long_overlap] Epoch 17 | loss=0.4880 | train=79.40% | val=73.86%
+[long_overlap] Epoch 18 | loss=0.4701 | train=78.12% | val=75.57%
+[long_overlap] Epoch 19 | loss=0.4491 | train=80.11% | val=72.73%
+[long_overlap] Epoch 20 | loss=0.4516 | train=79.69% | val=75.57%
+⏹ Early stopping triggered after 20 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 75.57% at epoch 15
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_prochighpass_fft_batch_20251022_120300.pt
+
+📊 Train Results
+Overall Accuracy: 79.40%
+cloves         : 78.21%
+cumin          : 66.84%
+oregano        : 90.44%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 6 windows
+cumin          : 4 windows
+oregano        : 53 windows
+🏁 Final Decision: oregano (53 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 7 windows
+cumin          : 3 windows
+oregano        : 53 windows
+🏁 Final Decision: oregano (53 / 63)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['standard_scaler', 'diff_data_like']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9148 | train=57.59% | val=62.29%
+[long_overlap] Epoch 02 | loss=0.7298 | train=69.49% | val=68.00%
+[long_overlap] Epoch 03 | loss=0.6577 | train=71.88% | val=76.00%
+[long_overlap] Epoch 04 | loss=0.5629 | train=78.27% | val=76.00%
+[long_overlap] Epoch 05 | loss=0.5228 | train=79.91% | val=78.86%
+[long_overlap] Epoch 06 | loss=0.4674 | train=82.59% | val=80.00%
+[long_overlap] Epoch 07 | loss=0.4211 | train=84.97% | val=80.00%
+[long_overlap] Epoch 08 | loss=0.3997 | train=85.27% | val=85.14%
+[long_overlap] Epoch 09 | loss=0.3775 | train=87.20% | val=85.14%
+[long_overlap] Epoch 10 | loss=0.3762 | train=86.01% | val=81.71%
+[long_overlap] Epoch 11 | loss=0.3444 | train=87.80% | val=82.86%
+[long_overlap] Epoch 12 | loss=0.3436 | train=87.65% | val=84.00%
+[long_overlap] Epoch 13 | loss=0.3342 | train=88.99% | val=86.86%
+[long_overlap] Epoch 14 | loss=0.3149 | train=89.88% | val=84.00%
+[long_overlap] Epoch 15 | loss=0.3308 | train=88.69% | val=84.00%
+[long_overlap] Epoch 16 | loss=0.3002 | train=88.99% | val=88.57%
+[long_overlap] Epoch 17 | loss=0.2792 | train=89.88% | val=91.43%
+[long_overlap] Epoch 18 | loss=0.2696 | train=90.48% | val=89.71%
+[long_overlap] Epoch 19 | loss=0.2562 | train=91.37% | val=90.86%
+[long_overlap] Epoch 20 | loss=0.2278 | train=91.96% | val=89.14%
+[long_overlap] Epoch 21 | loss=0.2403 | train=92.71% | val=89.71%
+[long_overlap] Epoch 22 | loss=0.2049 | train=93.90% | val=92.00%
+[long_overlap] Epoch 23 | loss=0.1957 | train=93.45% | val=93.14%
+[long_overlap] Epoch 24 | loss=0.1992 | train=93.60% | val=94.29%
+[long_overlap] Epoch 25 | loss=0.1817 | train=94.49% | val=92.57%
+[long_overlap] Epoch 26 | loss=0.1670 | train=95.09% | val=93.71%
+[long_overlap] Epoch 27 | loss=0.1664 | train=95.54% | val=93.71%
+[long_overlap] Epoch 28 | loss=0.1506 | train=95.39% | val=93.71%
+[long_overlap] Epoch 29 | loss=0.1508 | train=94.94% | val=93.71%
+⏹ Early stopping triggered after 29 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 94.29% at epoch 24
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_diff_data_like_20251022_120310.pt
+
+📊 Train Results
+Overall Accuracy: 95.98%
+cloves         : 97.13%
+cumin          : 93.85%
+oregano        : 96.57%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: cloves ❌
+📊 Window votes:
+cloves         : 60 windows
+cumin          : 0 windows
+oregano        : 3 windows
+🏁 Final Decision: cloves (60 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: cloves ✅
+📊 Window votes:
+cloves         : 36 windows
+cumin          : 0 windows
+oregano        : 26 windows
+🏁 Final Decision: cloves (36 / 62)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['standard_scaler', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.1007 | train=37.64% | val=44.89%
+[long_overlap] Epoch 02 | loss=1.0421 | train=51.85% | val=53.41%
+[long_overlap] Epoch 03 | loss=0.9284 | train=56.39% | val=61.36%
+[long_overlap] Epoch 04 | loss=0.7946 | train=61.79% | val=71.02%
+[long_overlap] Epoch 05 | loss=0.7420 | train=66.48% | val=61.36%
+[long_overlap] Epoch 06 | loss=0.7034 | train=70.03% | val=69.32%
+[long_overlap] Epoch 07 | loss=0.6653 | train=71.88% | val=71.59%
+[long_overlap] Epoch 08 | loss=0.6234 | train=73.58% | val=72.73%
+[long_overlap] Epoch 09 | loss=0.6027 | train=75.14% | val=69.32%
+[long_overlap] Epoch 10 | loss=0.5802 | train=76.28% | val=75.00%
+[long_overlap] Epoch 11 | loss=0.5598 | train=76.42% | val=75.00%
+[long_overlap] Epoch 12 | loss=0.5622 | train=76.14% | val=73.86%
+[long_overlap] Epoch 13 | loss=0.5142 | train=80.40% | val=71.02%
+[long_overlap] Epoch 14 | loss=0.5114 | train=80.11% | val=75.57%
+[long_overlap] Epoch 15 | loss=0.4917 | train=80.82% | val=74.43%
+[long_overlap] Epoch 16 | loss=0.4786 | train=80.40% | val=75.00%
+[long_overlap] Epoch 17 | loss=0.4744 | train=81.25% | val=75.57%
+[long_overlap] Epoch 18 | loss=0.4741 | train=81.25% | val=75.00%
+[long_overlap] Epoch 19 | loss=0.4583 | train=83.38% | val=75.00%
+⏹ Early stopping triggered after 19 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 75.57% at epoch 14
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_highpass_fft_batch_20251022_120317.pt
+
+📊 Train Results
+Overall Accuracy: 82.53%
+cloves         : 85.55%
+cumin          : 66.67%
+oregano        : 91.70%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 5 windows
+cumin          : 0 windows
+oregano        : 58 windows
+🏁 Final Decision: oregano (58 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 2 windows
+cumin          : 0 windows
+oregano        : 61 windows
+🏁 Final Decision: oregano (61 / 63)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['diff_data_like', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0835 | train=39.14% | val=37.71%
+[long_overlap] Epoch 02 | loss=1.0390 | train=42.26% | val=39.43%
+[long_overlap] Epoch 03 | loss=1.0213 | train=48.66% | val=41.14%
+[long_overlap] Epoch 04 | loss=1.0046 | train=47.62% | val=41.14%
+[long_overlap] Epoch 05 | loss=0.9873 | train=50.60% | val=41.71%
+[long_overlap] Epoch 06 | loss=0.9712 | train=49.40% | val=43.43%
+[long_overlap] Epoch 07 | loss=0.9577 | train=51.64% | val=41.14%
+[long_overlap] Epoch 08 | loss=0.9512 | train=51.64% | val=42.29%
+[long_overlap] Epoch 09 | loss=0.9297 | train=49.70% | val=48.00%
+[long_overlap] Epoch 10 | loss=0.9339 | train=51.64% | val=48.57%
+[long_overlap] Epoch 11 | loss=0.9093 | train=54.32% | val=48.00%
+[long_overlap] Epoch 12 | loss=0.9121 | train=51.64% | val=48.57%
+[long_overlap] Epoch 13 | loss=0.8813 | train=53.57% | val=47.43%
+[long_overlap] Epoch 14 | loss=0.8720 | train=53.87% | val=48.57%
+[long_overlap] Epoch 15 | loss=0.8612 | train=55.51% | val=50.29%
+[long_overlap] Epoch 16 | loss=0.8465 | train=56.40% | val=49.71%
+[long_overlap] Epoch 17 | loss=0.8214 | train=56.99% | val=48.57%
+[long_overlap] Epoch 18 | loss=0.8144 | train=57.89% | val=57.14%
+[long_overlap] Epoch 19 | loss=0.8144 | train=58.18% | val=48.57%
+[long_overlap] Epoch 20 | loss=0.7880 | train=59.23% | val=54.29%
+[long_overlap] Epoch 21 | loss=0.7508 | train=62.20% | val=59.43%
+[long_overlap] Epoch 22 | loss=0.7208 | train=62.80% | val=62.29%
+[long_overlap] Epoch 23 | loss=0.6990 | train=62.95% | val=63.43%
+[long_overlap] Epoch 24 | loss=0.6774 | train=66.07% | val=71.43%
+[long_overlap] Epoch 25 | loss=0.6997 | train=62.80% | val=62.86%
+[long_overlap] Epoch 26 | loss=0.6681 | train=67.11% | val=60.57%
+[long_overlap] Epoch 27 | loss=0.6458 | train=68.60% | val=68.57%
+[long_overlap] Epoch 28 | loss=0.6442 | train=68.30% | val=60.57%
+[long_overlap] Epoch 29 | loss=0.6177 | train=71.58% | val=65.71%
+⏹ Early stopping triggered after 29 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 71.43% at epoch 24
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procdiff_data_like_highpass_fft_batch_20251022_120326.pt
+
+📊 Train Results
+Overall Accuracy: 69.64%
+cloves         : 70.04%
+cumin          : 63.54%
+oregano        : 74.25%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 5 windows
+cumin          : 1 windows
+oregano        : 57 windows
+🏁 Final Decision: oregano (57 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 2 windows
+oregano        : 60 windows
+🏁 Final Decision: oregano (60 / 62)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5]
+   Data Processing: ['standard_scaler', 'diff_data_like', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0993 | train=34.97% | val=31.43%
+[long_overlap] Epoch 02 | loss=1.0769 | train=42.71% | val=41.14%
+[long_overlap] Epoch 03 | loss=1.0503 | train=45.09% | val=42.86%
+[long_overlap] Epoch 04 | loss=0.9991 | train=48.51% | val=43.43%
+[long_overlap] Epoch 05 | loss=0.9513 | train=50.45% | val=50.29%
+[long_overlap] Epoch 06 | loss=0.9352 | train=52.83% | val=49.14%
+[long_overlap] Epoch 07 | loss=0.9030 | train=53.87% | val=46.29%
+[long_overlap] Epoch 08 | loss=0.8818 | train=56.99% | val=48.00%
+[long_overlap] Epoch 09 | loss=0.8696 | train=57.89% | val=52.57%
+[long_overlap] Epoch 10 | loss=0.8356 | train=58.93% | val=50.86%
+[long_overlap] Epoch 11 | loss=0.8154 | train=60.42% | val=53.71%
+[long_overlap] Epoch 12 | loss=0.8048 | train=60.27% | val=56.00%
+[long_overlap] Epoch 13 | loss=0.7870 | train=62.65% | val=50.86%
+[long_overlap] Epoch 14 | loss=0.8043 | train=61.76% | val=50.29%
+[long_overlap] Epoch 15 | loss=0.7723 | train=65.62% | val=52.57%
+[long_overlap] Epoch 16 | loss=0.7838 | train=64.14% | val=58.86%
+[long_overlap] Epoch 17 | loss=0.7539 | train=65.48% | val=55.43%
+[long_overlap] Epoch 18 | loss=0.7490 | train=66.07% | val=52.00%
+[long_overlap] Epoch 19 | loss=0.7322 | train=67.71% | val=52.00%
+[long_overlap] Epoch 20 | loss=0.7279 | train=67.56% | val=58.86%
+[long_overlap] Epoch 21 | loss=0.7136 | train=65.33% | val=57.14%
+⏹ Early stopping triggered after 21 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 58.86% at epoch 16
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_diff_data_like_highpass_fft_batch_20251022_120333.pt
+
+📊 Train Results
+Overall Accuracy: 69.20%
+cloves         : 68.67%
+cumin          : 64.92%
+oregano        : 73.28%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 19 windows
+cumin          : 0 windows
+oregano        : 44 windows
+🏁 Final Decision: oregano (44 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 1 windows
+cumin          : 0 windows
+oregano        : 61 windows
+🏁 Final Decision: oregano (61 / 62)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: None
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9273 | train=55.26% | val=59.66%
+[long_overlap] Epoch 02 | loss=0.7934 | train=65.48% | val=70.45%
+[long_overlap] Epoch 03 | loss=0.7109 | train=68.89% | val=68.75%
+[long_overlap] Epoch 04 | loss=0.6571 | train=69.46% | val=74.43%
+[long_overlap] Epoch 05 | loss=0.5961 | train=73.15% | val=76.70%
+[long_overlap] Epoch 06 | loss=0.5603 | train=75.85% | val=75.00%
+[long_overlap] Epoch 07 | loss=0.5168 | train=76.99% | val=77.84%
+[long_overlap] Epoch 08 | loss=0.4679 | train=80.82% | val=81.25%
+[long_overlap] Epoch 09 | loss=0.4306 | train=81.68% | val=82.39%
+[long_overlap] Epoch 10 | loss=0.4083 | train=82.39% | val=83.52%
+[long_overlap] Epoch 11 | loss=0.3820 | train=84.52% | val=84.09%
+[long_overlap] Epoch 12 | loss=0.3553 | train=83.66% | val=88.07%
+[long_overlap] Epoch 13 | loss=0.3210 | train=86.65% | val=88.07%
+[long_overlap] Epoch 14 | loss=0.3114 | train=88.35% | val=85.80%
+[long_overlap] Epoch 15 | loss=0.2821 | train=88.64% | val=89.20%
+[long_overlap] Epoch 16 | loss=0.2686 | train=89.63% | val=90.34%
+[long_overlap] Epoch 17 | loss=0.2488 | train=90.34% | val=89.20%
+[long_overlap] Epoch 18 | loss=0.2404 | train=91.34% | val=89.20%
+[long_overlap] Epoch 19 | loss=0.2081 | train=92.05% | val=94.32%
+[long_overlap] Epoch 20 | loss=0.1893 | train=94.03% | val=94.89%
+[long_overlap] Epoch 21 | loss=0.1634 | train=95.03% | val=93.18%
+[long_overlap] Epoch 22 | loss=0.1663 | train=93.75% | val=96.02%
+[long_overlap] Epoch 23 | loss=0.1171 | train=96.45% | val=96.02%
+[long_overlap] Epoch 24 | loss=0.1268 | train=96.02% | val=96.59%
+[long_overlap] Epoch 25 | loss=0.1074 | train=96.02% | val=96.02%
+[long_overlap] Epoch 26 | loss=0.1010 | train=96.88% | val=93.75%
+[long_overlap] Epoch 27 | loss=0.0930 | train=97.59% | val=97.16%
+[long_overlap] Epoch 28 | loss=0.0792 | train=97.02% | val=96.59%
+[long_overlap] Epoch 29 | loss=0.0932 | train=97.30% | val=98.30%
+[long_overlap] Epoch 30 | loss=0.0619 | train=98.58% | val=96.59%
+[long_overlap] Epoch 31 | loss=0.0648 | train=98.15% | val=98.30%
+[long_overlap] Epoch 32 | loss=0.0450 | train=99.15% | val=98.30%
+[long_overlap] Epoch 33 | loss=0.0357 | train=99.43% | val=98.30%
+[long_overlap] Epoch 34 | loss=0.0282 | train=99.57% | val=98.86%
+[long_overlap] Epoch 35 | loss=0.0365 | train=99.01% | val=97.73%
+[long_overlap] Epoch 36 | loss=0.0459 | train=98.58% | val=98.86%
+[long_overlap] Epoch 37 | loss=0.0458 | train=98.86% | val=99.43%
+[long_overlap] Epoch 38 | loss=0.0406 | train=98.44% | val=99.43%
+[long_overlap] Epoch 39 | loss=0.0280 | train=99.15% | val=98.86%
+[long_overlap] Epoch 40 | loss=0.0257 | train=99.29% | val=99.43%
+[long_overlap] Epoch 41 | loss=0.0169 | train=99.86% | val=100.00%
+[long_overlap] Epoch 42 | loss=0.0127 | train=99.86% | val=99.43%
+[long_overlap] Epoch 43 | loss=0.0275 | train=99.15% | val=98.86%
+[long_overlap] Epoch 44 | loss=0.0327 | train=99.15% | val=98.30%
+[long_overlap] Epoch 45 | loss=0.0225 | train=99.43% | val=98.86%
+[long_overlap] Epoch 46 | loss=0.0185 | train=99.43% | val=99.43%
+⏹ Early stopping triggered after 46 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 100.00% at epoch 41
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procnone_20251022_120349.pt
+
+📊 Train Results
+Overall Accuracy: 100.00%
+cloves         : 100.00%
+cumin          : 100.00%
+oregano        : 100.00%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: cloves ❌
+📊 Window votes:
+cloves         : 63 windows
+cumin          : 0 windows
+oregano        : 0 windows
+🏁 Final Decision: cloves (63 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: cloves ✅
+📊 Window votes:
+cloves         : 63 windows
+cumin          : 0 windows
+oregano        : 0 windows
+🏁 Final Decision: cloves (63 / 63)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.8509 | train=64.49% | val=76.14%
+[long_overlap] Epoch 02 | loss=0.5850 | train=79.12% | val=77.84%
+[long_overlap] Epoch 03 | loss=0.5142 | train=80.97% | val=78.98%
+[long_overlap] Epoch 04 | loss=0.4570 | train=82.53% | val=81.82%
+[long_overlap] Epoch 05 | loss=0.4195 | train=84.94% | val=81.25%
+[long_overlap] Epoch 06 | loss=0.3738 | train=86.22% | val=85.23%
+[long_overlap] Epoch 07 | loss=0.3521 | train=85.94% | val=84.09%
+[long_overlap] Epoch 08 | loss=0.3169 | train=87.64% | val=83.52%
+[long_overlap] Epoch 09 | loss=0.2984 | train=87.78% | val=86.36%
+[long_overlap] Epoch 10 | loss=0.2787 | train=88.49% | val=90.34%
+[long_overlap] Epoch 11 | loss=0.2520 | train=89.06% | val=90.34%
+[long_overlap] Epoch 12 | loss=0.2335 | train=92.05% | val=92.61%
+[long_overlap] Epoch 13 | loss=0.2049 | train=92.47% | val=94.32%
+[long_overlap] Epoch 14 | loss=0.1808 | train=95.17% | val=91.48%
+[long_overlap] Epoch 15 | loss=0.1640 | train=94.74% | val=95.45%
+[long_overlap] Epoch 16 | loss=0.1490 | train=95.03% | val=96.59%
+[long_overlap] Epoch 17 | loss=0.1278 | train=96.16% | val=95.45%
+[long_overlap] Epoch 18 | loss=0.1057 | train=97.16% | val=97.73%
+[long_overlap] Epoch 19 | loss=0.1156 | train=96.31% | val=97.73%
+[long_overlap] Epoch 20 | loss=0.0836 | train=97.87% | val=97.73%
+[long_overlap] Epoch 21 | loss=0.0868 | train=97.44% | val=97.16%
+[long_overlap] Epoch 22 | loss=0.0619 | train=98.58% | val=98.86%
+[long_overlap] Epoch 23 | loss=0.0496 | train=98.86% | val=98.86%
+[long_overlap] Epoch 24 | loss=0.0413 | train=99.01% | val=98.86%
+[long_overlap] Epoch 25 | loss=0.0299 | train=99.57% | val=98.86%
+[long_overlap] Epoch 26 | loss=0.0272 | train=99.57% | val=98.86%
+[long_overlap] Epoch 27 | loss=0.0304 | train=99.29% | val=100.00%
+[long_overlap] Epoch 28 | loss=0.0248 | train=99.43% | val=98.30%
+[long_overlap] Epoch 29 | loss=0.0256 | train=99.43% | val=97.16%
+[long_overlap] Epoch 30 | loss=0.0157 | train=99.86% | val=99.43%
+[long_overlap] Epoch 31 | loss=0.0180 | train=99.57% | val=98.30%
+[long_overlap] Epoch 32 | loss=0.0295 | train=99.43% | val=98.30%
+⏹ Early stopping triggered after 32 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 100.00% at epoch 27
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_20251022_120400.pt
+
+📊 Train Results
+Overall Accuracy: 99.43%
+cloves         : 99.61%
+cumin          : 99.49%
+oregano        : 99.21%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 63 windows
+🏁 Final Decision: oregano (63 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 63 windows
+🏁 Final Decision: oregano (63 / 63)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['diff_data_like']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9823 | train=48.81% | val=57.71%
+[long_overlap] Epoch 02 | loss=0.8592 | train=57.44% | val=64.00%
+[long_overlap] Epoch 03 | loss=0.7373 | train=67.11% | val=70.29%
+[long_overlap] Epoch 04 | loss=0.6812 | train=68.75% | val=65.71%
+[long_overlap] Epoch 05 | loss=0.6386 | train=69.64% | val=70.86%
+[long_overlap] Epoch 06 | loss=0.5940 | train=72.47% | val=66.86%
+[long_overlap] Epoch 07 | loss=0.5816 | train=72.62% | val=68.00%
+[long_overlap] Epoch 08 | loss=0.5463 | train=74.70% | val=74.86%
+[long_overlap] Epoch 09 | loss=0.5021 | train=76.79% | val=75.43%
+[long_overlap] Epoch 10 | loss=0.4743 | train=79.91% | val=79.43%
+[long_overlap] Epoch 11 | loss=0.4469 | train=80.65% | val=78.86%
+[long_overlap] Epoch 12 | loss=0.4172 | train=83.93% | val=81.71%
+[long_overlap] Epoch 13 | loss=0.4086 | train=83.48% | val=82.29%
+[long_overlap] Epoch 14 | loss=0.3993 | train=83.33% | val=81.71%
+[long_overlap] Epoch 15 | loss=0.3521 | train=86.01% | val=83.43%
+[long_overlap] Epoch 16 | loss=0.3355 | train=85.86% | val=83.43%
+[long_overlap] Epoch 17 | loss=0.2909 | train=89.43% | val=84.00%
+[long_overlap] Epoch 18 | loss=0.3012 | train=87.65% | val=82.86%
+[long_overlap] Epoch 19 | loss=0.2965 | train=87.95% | val=83.43%
+[long_overlap] Epoch 20 | loss=0.2512 | train=90.62% | val=85.14%
+[long_overlap] Epoch 21 | loss=0.2539 | train=90.62% | val=85.14%
+[long_overlap] Epoch 22 | loss=0.2791 | train=88.39% | val=82.86%
+[long_overlap] Epoch 23 | loss=0.2498 | train=89.88% | val=84.57%
+[long_overlap] Epoch 24 | loss=0.2204 | train=91.52% | val=86.29%
+[long_overlap] Epoch 25 | loss=0.2100 | train=92.71% | val=85.14%
+[long_overlap] Epoch 26 | loss=0.2004 | train=93.01% | val=86.86%
+[long_overlap] Epoch 27 | loss=0.2144 | train=91.07% | val=89.71%
+[long_overlap] Epoch 28 | loss=0.1765 | train=93.30% | val=84.00%
+[long_overlap] Epoch 29 | loss=0.1880 | train=93.45% | val=85.71%
+[long_overlap] Epoch 30 | loss=0.2006 | train=92.41% | val=82.86%
+[long_overlap] Epoch 31 | loss=0.1975 | train=91.37% | val=88.57%
+[long_overlap] Epoch 32 | loss=0.1645 | train=94.79% | val=86.86%
+⏹ Early stopping triggered after 32 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 89.71% at epoch 27
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procdiff_data_like_20251022_120411.pt
+
+📊 Train Results
+Overall Accuracy: 95.24%
+cloves         : 94.38%
+cumin          : 95.31%
+oregano        : 96.10%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 7 windows
+cumin          : 0 windows
+oregano        : 56 windows
+🏁 Final Decision: oregano (56 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 62 windows
+🏁 Final Decision: oregano (62 / 62)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0538 | train=47.16% | val=47.16%
+[long_overlap] Epoch 02 | loss=0.9555 | train=54.26% | val=57.39%
+[long_overlap] Epoch 03 | loss=0.8765 | train=58.24% | val=60.23%
+[long_overlap] Epoch 04 | loss=0.8133 | train=61.93% | val=63.07%
+[long_overlap] Epoch 05 | loss=0.7550 | train=64.63% | val=68.18%
+[long_overlap] Epoch 06 | loss=0.6892 | train=68.61% | val=73.30%
+[long_overlap] Epoch 07 | loss=0.6264 | train=70.45% | val=72.16%
+[long_overlap] Epoch 08 | loss=0.5933 | train=70.74% | val=73.86%
+[long_overlap] Epoch 09 | loss=0.5715 | train=72.87% | val=72.16%
+[long_overlap] Epoch 10 | loss=0.5500 | train=74.29% | val=73.30%
+[long_overlap] Epoch 11 | loss=0.5123 | train=75.85% | val=76.70%
+[long_overlap] Epoch 12 | loss=0.5022 | train=76.56% | val=71.02%
+[long_overlap] Epoch 13 | loss=0.4858 | train=79.12% | val=76.70%
+[long_overlap] Epoch 14 | loss=0.4852 | train=76.28% | val=74.43%
+[long_overlap] Epoch 15 | loss=0.4759 | train=79.55% | val=76.14%
+[long_overlap] Epoch 16 | loss=0.4587 | train=78.41% | val=75.57%
+⏹ Early stopping triggered after 16 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 76.70% at epoch 11
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_prochighpass_fft_batch_20251022_120416.pt
+
+📊 Train Results
+Overall Accuracy: 82.24%
+cloves         : 80.16%
+cumin          : 71.28%
+oregano        : 92.86%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 63 windows
+🏁 Final Decision: oregano (63 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 63 windows
+🏁 Final Decision: oregano (63 / 63)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler', 'diff_data_like']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=0.9694 | train=53.57% | val=65.71%
+[long_overlap] Epoch 02 | loss=0.7789 | train=70.68% | val=76.00%
+[long_overlap] Epoch 03 | loss=0.6526 | train=75.00% | val=79.43%
+[long_overlap] Epoch 04 | loss=0.5378 | train=79.91% | val=80.00%
+[long_overlap] Epoch 05 | loss=0.4944 | train=80.65% | val=78.86%
+[long_overlap] Epoch 06 | loss=0.4494 | train=80.95% | val=81.71%
+[long_overlap] Epoch 07 | loss=0.4129 | train=83.48% | val=84.57%
+[long_overlap] Epoch 08 | loss=0.3842 | train=84.38% | val=84.57%
+[long_overlap] Epoch 09 | loss=0.3699 | train=85.27% | val=85.14%
+[long_overlap] Epoch 10 | loss=0.3480 | train=86.01% | val=85.14%
+[long_overlap] Epoch 11 | loss=0.3351 | train=87.20% | val=85.14%
+[long_overlap] Epoch 12 | loss=0.3184 | train=88.10% | val=86.29%
+[long_overlap] Epoch 13 | loss=0.3022 | train=88.99% | val=88.57%
+[long_overlap] Epoch 14 | loss=0.2726 | train=90.03% | val=88.00%
+[long_overlap] Epoch 15 | loss=0.2705 | train=90.48% | val=86.86%
+[long_overlap] Epoch 16 | loss=0.2494 | train=92.26% | val=88.57%
+[long_overlap] Epoch 17 | loss=0.2316 | train=92.56% | val=89.71%
+[long_overlap] Epoch 18 | loss=0.2237 | train=92.41% | val=89.71%
+[long_overlap] Epoch 19 | loss=0.2052 | train=93.15% | val=90.29%
+[long_overlap] Epoch 20 | loss=0.1992 | train=94.49% | val=93.14%
+[long_overlap] Epoch 21 | loss=0.1946 | train=94.49% | val=93.71%
+[long_overlap] Epoch 22 | loss=0.1870 | train=94.20% | val=93.14%
+[long_overlap] Epoch 23 | loss=0.1687 | train=95.24% | val=93.14%
+[long_overlap] Epoch 24 | loss=0.1608 | train=95.09% | val=94.29%
+[long_overlap] Epoch 25 | loss=0.1637 | train=94.05% | val=93.14%
+[long_overlap] Epoch 26 | loss=0.1563 | train=95.54% | val=94.29%
+[long_overlap] Epoch 27 | loss=0.1371 | train=95.98% | val=94.29%
+[long_overlap] Epoch 28 | loss=0.1126 | train=96.73% | val=92.00%
+[long_overlap] Epoch 29 | loss=0.1224 | train=95.98% | val=94.29%
+⏹ Early stopping triggered after 29 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 94.29% at epoch 24
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_diff_data_like_20251022_120426.pt
+
+📊 Train Results
+Overall Accuracy: 96.73%
+cloves         : 94.76%
+cumin          : 98.96%
+oregano        : 96.98%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 20 windows
+cumin          : 0 windows
+oregano        : 43 windows
+🏁 Final Decision: oregano (43 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 62 windows
+🏁 Final Decision: oregano (62 / 62)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0659 | train=46.73% | val=53.41%
+[long_overlap] Epoch 02 | loss=0.9691 | train=52.84% | val=52.27%
+[long_overlap] Epoch 03 | loss=0.7991 | train=57.53% | val=52.84%
+[long_overlap] Epoch 04 | loss=0.6831 | train=64.49% | val=63.07%
+[long_overlap] Epoch 05 | loss=0.6419 | train=67.61% | val=69.32%
+[long_overlap] Epoch 06 | loss=0.6123 | train=71.59% | val=69.89%
+[long_overlap] Epoch 07 | loss=0.5900 | train=72.30% | val=71.59%
+[long_overlap] Epoch 08 | loss=0.5647 | train=74.01% | val=66.48%
+[long_overlap] Epoch 09 | loss=0.5340 | train=76.14% | val=68.18%
+[long_overlap] Epoch 10 | loss=0.5146 | train=76.99% | val=72.73%
+[long_overlap] Epoch 11 | loss=0.4917 | train=75.99% | val=72.16%
+[long_overlap] Epoch 12 | loss=0.4730 | train=78.98% | val=73.30%
+[long_overlap] Epoch 13 | loss=0.4481 | train=81.96% | val=74.43%
+[long_overlap] Epoch 14 | loss=0.4415 | train=81.11% | val=71.59%
+[long_overlap] Epoch 15 | loss=0.4140 | train=83.10% | val=75.00%
+[long_overlap] Epoch 16 | loss=0.4138 | train=82.24% | val=76.70%
+[long_overlap] Epoch 17 | loss=0.4198 | train=82.53% | val=76.70%
+[long_overlap] Epoch 18 | loss=0.3833 | train=84.38% | val=71.02%
+[long_overlap] Epoch 19 | loss=0.3975 | train=83.81% | val=69.32%
+[long_overlap] Epoch 20 | loss=0.3772 | train=84.52% | val=73.30%
+[long_overlap] Epoch 21 | loss=0.3604 | train=85.23% | val=80.68%
+[long_overlap] Epoch 22 | loss=0.3457 | train=85.51% | val=77.27%
+[long_overlap] Epoch 23 | loss=0.3288 | train=87.64% | val=75.57%
+[long_overlap] Epoch 24 | loss=0.3105 | train=88.07% | val=75.00%
+[long_overlap] Epoch 25 | loss=0.2959 | train=89.20% | val=77.84%
+[long_overlap] Epoch 26 | loss=0.2823 | train=89.63% | val=75.57%
+⏹ Early stopping triggered after 26 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 80.68% at epoch 21
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_highpass_fft_batch_20251022_120435.pt
+
+📊 Train Results
+Overall Accuracy: 90.62%
+cloves         : 81.25%
+cumin          : 95.41%
+oregano        : 96.43%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 63 windows
+🏁 Final Decision: oregano (63 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 1 windows
+cumin          : 0 windows
+oregano        : 62 windows
+🏁 Final Decision: oregano (62 / 63)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['diff_data_like', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0823 | train=37.80% | val=40.00%
+[long_overlap] Epoch 02 | loss=1.0307 | train=44.64% | val=40.00%
+[long_overlap] Epoch 03 | loss=0.9799 | train=56.10% | val=52.00%
+[long_overlap] Epoch 04 | loss=0.9225 | train=60.57% | val=52.57%
+[long_overlap] Epoch 05 | loss=0.8517 | train=61.90% | val=55.43%
+[long_overlap] Epoch 06 | loss=0.8082 | train=61.61% | val=55.43%
+[long_overlap] Epoch 07 | loss=0.7885 | train=62.65% | val=56.00%
+[long_overlap] Epoch 08 | loss=0.7689 | train=62.20% | val=60.00%
+[long_overlap] Epoch 09 | loss=0.7668 | train=62.05% | val=56.00%
+[long_overlap] Epoch 10 | loss=0.7361 | train=63.99% | val=63.43%
+[long_overlap] Epoch 11 | loss=0.7388 | train=64.88% | val=61.14%
+[long_overlap] Epoch 12 | loss=0.7072 | train=64.73% | val=64.57%
+[long_overlap] Epoch 13 | loss=0.6728 | train=65.77% | val=62.86%
+[long_overlap] Epoch 14 | loss=0.6860 | train=65.18% | val=65.14%
+[long_overlap] Epoch 15 | loss=0.6667 | train=67.56% | val=69.14%
+[long_overlap] Epoch 16 | loss=0.6366 | train=66.96% | val=64.00%
+[long_overlap] Epoch 17 | loss=0.6234 | train=71.13% | val=64.00%
+[long_overlap] Epoch 18 | loss=0.6303 | train=69.64% | val=65.71%
+[long_overlap] Epoch 19 | loss=0.6189 | train=69.94% | val=67.43%
+[long_overlap] Epoch 20 | loss=0.5906 | train=72.17% | val=66.86%
+⏹ Early stopping triggered after 20 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 69.14% at epoch 15
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procdiff_data_like_highpass_fft_batch_20251022_120442.pt
+
+📊 Train Results
+Overall Accuracy: 72.17%
+cloves         : 81.53%
+cumin          : 48.69%
+oregano        : 81.47%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 63 windows
+🏁 Final Decision: oregano (63 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 62 windows
+🏁 Final Decision: oregano (62 / 62)
+──────────────────────────────────────────────
+
+🧩 Config: long_overlap (window=60, stride=30)
+   Selected Channels: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+   Data Processing: ['standard_scaler', 'diff_data_like', 'highpass_fft_batch']
+🚀 Start Training...
+
+[long_overlap] Epoch 01 | loss=1.0718 | train=40.03% | val=50.86%
+[long_overlap] Epoch 02 | loss=0.9972 | train=50.45% | val=55.43%
+[long_overlap] Epoch 03 | loss=0.9283 | train=52.68% | val=56.57%
+[long_overlap] Epoch 04 | loss=0.8881 | train=56.85% | val=54.29%
+[long_overlap] Epoch 05 | loss=0.8582 | train=57.59% | val=49.71%
+[long_overlap] Epoch 06 | loss=0.8340 | train=56.10% | val=59.43%
+[long_overlap] Epoch 07 | loss=0.8294 | train=58.48% | val=52.00%
+[long_overlap] Epoch 08 | loss=0.7898 | train=61.46% | val=53.71%
+[long_overlap] Epoch 09 | loss=0.7354 | train=63.54% | val=57.14%
+[long_overlap] Epoch 10 | loss=0.7036 | train=67.56% | val=57.14%
+[long_overlap] Epoch 11 | loss=0.6648 | train=69.05% | val=60.00%
+[long_overlap] Epoch 12 | loss=0.6803 | train=66.82% | val=61.14%
+[long_overlap] Epoch 13 | loss=0.6423 | train=70.68% | val=64.00%
+[long_overlap] Epoch 14 | loss=0.5997 | train=71.28% | val=62.29%
+[long_overlap] Epoch 15 | loss=0.5958 | train=71.88% | val=63.43%
+[long_overlap] Epoch 16 | loss=0.5748 | train=72.47% | val=64.00%
+[long_overlap] Epoch 17 | loss=0.5601 | train=73.07% | val=64.57%
+[long_overlap] Epoch 18 | loss=0.5208 | train=76.19% | val=68.57%
+[long_overlap] Epoch 19 | loss=0.5174 | train=76.49% | val=67.43%
+[long_overlap] Epoch 20 | loss=0.4998 | train=76.93% | val=69.14%
+[long_overlap] Epoch 21 | loss=0.4502 | train=80.51% | val=74.29%
+[long_overlap] Epoch 22 | loss=0.4072 | train=83.93% | val=75.43%
+[long_overlap] Epoch 23 | loss=0.3924 | train=83.48% | val=77.14%
+[long_overlap] Epoch 24 | loss=0.3857 | train=82.89% | val=76.57%
+[long_overlap] Epoch 25 | loss=0.3756 | train=84.82% | val=77.14%
+[long_overlap] Epoch 26 | loss=0.3267 | train=86.31% | val=77.71%
+[long_overlap] Epoch 27 | loss=0.3328 | train=87.35% | val=78.29%
+[long_overlap] Epoch 28 | loss=0.3612 | train=83.18% | val=78.29%
+[long_overlap] Epoch 29 | loss=0.3166 | train=86.01% | val=80.57%
+[long_overlap] Epoch 30 | loss=0.2702 | train=88.84% | val=77.71%
+[long_overlap] Epoch 31 | loss=0.2735 | train=88.24% | val=77.71%
+[long_overlap] Epoch 32 | loss=0.2817 | train=87.80% | val=81.14%
+[long_overlap] Epoch 33 | loss=0.2602 | train=88.99% | val=78.29%
+[long_overlap] Epoch 34 | loss=0.2475 | train=89.58% | val=80.57%
+[long_overlap] Epoch 35 | loss=0.2248 | train=90.62% | val=78.29%
+[long_overlap] Epoch 36 | loss=0.2039 | train=92.11% | val=80.00%
+[long_overlap] Epoch 37 | loss=0.2004 | train=91.52% | val=78.86%
+⏹ Early stopping triggered after 37 epochs (no improvement for 5 rounds).
+🏁 Best validation accuracy: 81.14% at epoch 32
+💾 Best model saved to: checkpoints/long_overlap_win60_str30_procstandard_scaler_diff_data_like_highpass_fft_batch_20251022_120454.pt
+
+📊 Train Results
+Overall Accuracy: 92.26%
+cloves         : 98.38%
+cumin          : 88.72%
+oregano        : 88.70%
+
+📊 Online Inference (per-file detailed results)
+──────────────────────────────────────────────
+📄 File: cumin.today.bd6399a46021.csv
+🎯 True label: cumin
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 63 windows
+🏁 Final Decision: oregano (63 / 63)
+──────────────────────────────────────────────
+──────────────────────────────────────────────
+📄 File: cloves.today.9eec7d1c4669.csv
+🎯 True label: cloves
+🪶 Predicted: oregano ❌
+📊 Window votes:
+cloves         : 0 windows
+cumin          : 0 windows
+oregano        : 62 windows
+🏁 Final Decision: oregano (62 / 62)
+──────────────────────────────────────────────
+
+
+📈 Summary of All Configs
+────────────────────────────────────────────────────────────────────────────
+Config          Channels               Processing                Win    Str    Train(%)  
+------------------------------------------------------------------------------------------
+long_overlap    [0, 1, 2, 3, 4, 5]     none                      60     30     95.88     
+long_overlap    [0, 1, 2, 3, 4, 5]     standard_scaler           60     30     98.58     
+long_overlap    [0, 1, 2, 3, 4, 5]     diff_data_like            60     30     95.83     
+long_overlap    [0, 1, 2, 3, 4, 5]     highpass_fft_batch        60     30     79.40     
+long_overlap    [0, 1, 2, 3, 4, 5]     standard_scaler_diff_data_like 60     30     95.98     
+long_overlap    [0, 1, 2, 3, 4, 5]     standard_scaler_highpass_fft_batch 60     30     82.53     
+long_overlap    [0, 1, 2, 3, 4, 5]     diff_data_like_highpass_fft_batch 60     30     69.64     
+long_overlap    [0, 1, 2, 3, 4, 5]     standard_scaler_diff_data_like_highpass_fft_batch 60     30     69.20     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] none                      60     30     100.00    
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] standard_scaler           60     30     99.43     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] diff_data_like            60     30     95.24     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] highpass_fft_batch        60     30     82.24     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] standard_scaler_diff_data_like 60     30     96.73     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] standard_scaler_highpass_fft_batch 60     30     90.62     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] diff_data_like_highpass_fft_batch 60     30     72.17     
+long_overlap    [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11] standard_scaler_diff_data_like_highpass_fft_batch 60     30     92.26     
+────────────────────────────────────────────────────────────────────────────
+🎉 All training + online evaluation finished.
+📁 Logs saved to: log/log_2025-10-22_12-02-22.txt

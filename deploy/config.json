@@ -3,7 +3,7 @@
     "port": "/dev/cu.usbserial-01C63FEE",
     "baudrate": 115200,
     "data_dir": "data",
-    "stimuli1": "cloves",
+    "stimuli1": "test",
     "stimuli2": "",
     "stimuli3": "",
     "__note_stimuli_formatting": "<stimuli><percentage of total mixture> or just <stimuli> if not measuring a mixture.",
