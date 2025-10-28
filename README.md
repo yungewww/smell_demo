@@ -1,36 +1,20 @@
-#### demo_1 Dewei’s old code 
-[https://drive.google.com/drive/folders/1UBhen5lmalaFdH8CmSnuMtHbKxyRhbP5](https://drive.google.com/drive/folders/1UBhen5lmalaFdH8CmSnuMtHbKxyRhbP5)
-uses only contrastive learning
-* TO-DO: add inference code
 
-#### demo_2 
-cloves + cumin + oregano with transformer，highest accuracy ≈ 0.626
+#### demo_1
+Dewei’s Member’s Week demo, April 2025. Contrastive learning.
+
+#### demo_2
+Member’s Week demo, October 2025. Transformer-based model.
+All data collected on the morning of Oct 22, 2025, 3×10 min (cumin + cloves + oregano).
+
+1. Put training data into `data/train`, realtime test data into `data/online`.
+2. If you don’t know the best parameters, run `train.py`. It will test all combinations in `config.py` and save results to `log.txt`.
+   Run `to_csv.py` to convert `log.txt` → `log.csv`, then check which parameters perform best.
+3. If you already know the best parameters, run `quick_train.py` to train directly.
 
 #### deploy
-Realtime Data Collection and Prediction for Live Demo
-* run.py: collect data
-* monitor.py: show realtime collection visualization
-  * TO-DO: improve realtime visualization
-* infer.py: add correct model directory to checkpoints and the realtime data collected, run infer.py to predict
-  * TO-DO: add realtime prediction code and improve readme
 
+Realtime data collection and prediction for the live demo.
 
-## TO-DOs
-### Data Collection
-- cumin_glass, cloves_glass, oregano_glass
-- new glass box + new 4-channel sensor
-- 60min for each: 6 rounds * 10min (cumin + cloves + oregano) (at lease 30 min for each)
-- reset the sensor to the lowest point so nothing is dropping
-
-### Model
-- model1 contrastive learning: try dewei's old code: demo_1/demo_smell_contrastive_learning_gradient_method.ipynb + write a new inference code
-    - try to find the saved model in the christouml laptop
-- model2 transformer:
-    - put the collected data into data/train
-    - run train.py
-    - run to_csv.py
-    - the most stabel parameter: long_overlap	60	30	[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]	['highpass_fft_batch']
-
-### Interface
-- Write a code for the realtime collection of the sensor data (like in monitor.py)
-- Write a code for the realtime prediction
+* `run.py`: collect data
+* `monitor.py`: visualize realtime collection
+* `demo.py`: set correct model directory in `checkpoints` and collected data, then run demo.py to show visualization

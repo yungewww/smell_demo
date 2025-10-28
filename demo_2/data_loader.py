@@ -10,23 +10,19 @@ from config import DEFAULT_WINDOW_SIZE, DEFAULT_STRIDE
 
 
 def subtract_first_row(df: pd.DataFrame):
-    """对 DataFrame 每列减去首行，消除偏置。"""
+    
     return df - df.iloc[0]
 
 
 def load_sensor_data(data_path, removed_filtered_columns=None):
-    """
-    从 data_path/train 和 data_path/test 读取所有 CSV。
-    支持直接放 CSV 文件（不需要子文件夹）。
-    文件名中包含类别关键词（如 bodai、go、rendai 等）。
-    """
+    
     if removed_filtered_columns is None:
         removed_filtered_columns = []
 
     training_data = defaultdict(list)
     testing_data = defaultdict(list)
 
-    # ---------- 训练集 ----------
+    
     train_dir = os.path.join(data_path, "train")
     if os.path.exists(train_dir):
         for filename in os.listdir(train_dir):
@@ -39,10 +35,10 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
                 df = subtract_first_row(df)
                 df = df.drop(columns=removed_filtered_columns, errors="ignore")
 
-                # ✅ 根据文件名匹配类别（模糊匹配）
+                
                 label = None
                 for k in CLASS_LABELS.keys():
-                    if k in filename:  # ← 改成根据文件名匹配
+                    if k in filename:  
                         label = k
                         break
                 if label is None:
@@ -50,7 +46,7 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
 
                 training_data[label].append(df)
 
-    # ---------- 测试集 ----------
+    
     test_dir = os.path.join(data_path, "test")
     if os.path.exists(test_dir):
         for filename in os.listdir(test_dir):
@@ -77,7 +73,7 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
 
 
 def build_sliding_data(data: dict[str, list[pd.DataFrame]], window_size, stride):
-    """对每个类生成滑动窗口数据"""
+    
     X = []
     y = []
 
@@ -98,7 +94,7 @@ def build_sliding_data(data: dict[str, list[pd.DataFrame]], window_size, stride)
 
 
 def diff_data_like(data: dict, periods: int = 25):
-    """时间序列差分"""
+    
     out = {}
     for label, dfs in data.items():
         out_list = []
@@ -110,7 +106,7 @@ def diff_data_like(data: dict, periods: int = 25):
 
 
 def highpass_fft_batch(X, sampling_rate=1.0, cutoff=0.05):
-    """FFT 高通滤波"""
+    
     X = np.asarray(X)
     N, T, C = X.shape
     F = np.fft.rfft(X, axis=1)
@@ -121,7 +117,7 @@ def highpass_fft_batch(X, sampling_rate=1.0, cutoff=0.05):
     return X_clean
 
 
-# ========== 主函数 ==========
+
 if __name__ == "__main__":
     data_path = "data"
     removed_filtered_columns = []

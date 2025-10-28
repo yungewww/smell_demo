@@ -9,10 +9,10 @@ from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 
 
-# ====== 参数 ======
-data_path = "task4/data"  # 包含 train / test 文件夹
-seconds = 60  # 取前 30 秒
-sampling_rate = 1  # 如果是 1Hz，则 30秒 = 30行
+
+data_path = "task4/data"  
+seconds = 60  
+sampling_rate = 1  
 channels = 12
 batch_size = 16
 epochs = 50
@@ -20,7 +20,7 @@ lr = 1e-4
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-# ====== 数据加载 ======
+
 class SensorDataset(Dataset):
     def __init__(self, base_dir):
         self.samples = []
@@ -37,14 +37,14 @@ class SensorDataset(Dataset):
                     continue
                 path = os.path.join(class_dir, f)
                 df = pd.read_csv(path)
-                df = df.iloc[: self.max_len, :channels]  # 取前30秒
+                df = df.iloc[: self.max_len, :channels]  
                 if len(df) < self.max_len:
-                    # 不足30秒补0
+                    
                     pad = np.zeros((self.max_len - len(df), df.shape[1]))
                     df = np.vstack([df.values, pad])
                 else:
                     df = df.values
-                # 标准化
+                
                 df = StandardScaler().fit_transform(df)
                 self.samples.append(df)
                 self.labels.append(label_idx)
@@ -66,7 +66,7 @@ class SensorDataset(Dataset):
         return x, torch.tensor(y, dtype=torch.long)
 
 
-# ====== CNN 模型 ======
+
 class SimpleCNN(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
@@ -93,7 +93,7 @@ class SimpleCNN(nn.Module):
         return self.fc(x)
 
 
-# ====== 数据准备 ======
+
 train_dir = os.path.join(data_path, "train")
 test_dir = os.path.join(data_path, "test")
 
@@ -103,7 +103,7 @@ test_dataset = SensorDataset(test_dir)
 num_classes = len(train_dataset.class_names)
 print(f"Classes: {train_dataset.class_names}")
 
-# train/val 划分
+
 val_size = int(0.2 * len(train_dataset))
 train_size = len(train_dataset) - val_size
 train_ds, val_ds = random_split(train_dataset, [train_size, val_size])
@@ -113,13 +113,13 @@ val_loader = DataLoader(val_ds, batch_size=batch_size)
 test_loader = DataLoader(test_dataset, batch_size=batch_size)
 
 
-# ====== 初始化模型 ======
+
 model = SimpleCNN(num_classes).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=1e-4)
 
 
-# ====== 训练函数 ======
+
 def train(model, loader, optimizer, criterion):
     model.train()
     total_loss, total_correct, total = 0, 0, 0
@@ -136,7 +136,7 @@ def train(model, loader, optimizer, criterion):
     return total_loss / total, 100.0 * total_correct / total
 
 
-# ====== 验证函数 ======
+
 @torch.no_grad()
 def evaluate(model, loader):
     model.eval()
@@ -157,7 +157,7 @@ def evaluate(model, loader):
     return acc, per_class_acc
 
 
-# ====== 主训练循环 ======
+
 best_val = 0
 for epoch in range(1, epochs + 1):
     train_loss, train_acc = train(model, train_loader, optimizer, criterion)
@@ -171,19 +171,19 @@ for epoch in range(1, epochs + 1):
         print(f"💾 Saved best model ({val_acc:.2f}%)")
 
 
-# # ====== 测试集评估 ======
+
 # model.load_state_dict(torch.load("task4/checkpoints/cnn_best.pt", map_location=device))
 # test_acc, per_class_acc = evaluate(model, test_loader)
 # print(f"\n✅ Test Accuracy: {test_acc:.2f}%")
 # for cls, acc in zip(train_dataset.class_names, per_class_acc):
 #     print(f"{cls:<15}: {acc:.2f}%")
 
-# ====== 测试集评估 ======
+
 model.load_state_dict(torch.load("task4/checkpoints/cnn_best.pt", map_location=device))
 
-# 计算训练集准确率
+
 train_acc, per_class_acc_train = evaluate(model, train_loader)
-# 计算测试集准确率
+
 test_acc, per_class_acc_test = evaluate(model, test_loader)
 
 print("\n📊 Evaluation Results")

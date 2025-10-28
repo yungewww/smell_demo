@@ -134,9 +134,9 @@ class Transformer(nn.Module):
 
 if __name__ == "__main__":
     model = Transformer(
-        input_dim=12,  # 每个时间点的特征数（你的传感器列数）
+        input_dim=12,  
         model_dim=128,
-        num_classes=3,  # 类别数量（例如 chienan, rose, orange）
+        num_classes=3,  
         num_heads=4,
         num_layers=3,
     )
