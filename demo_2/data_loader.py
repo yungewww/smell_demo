@@ -22,10 +22,8 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
     training_data = defaultdict(list)
     testing_data = defaultdict(list)
 
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     train_dir = os.path.join(data_path, "train")
     if os.path.exists(train_dir):
         for filename in os.listdir(train_dir):
@@ -38,16 +36,11 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
                 df = subtract_first_row(df)
                 df = df.drop(columns=removed_filtered_columns, errors="ignore")
 
-<<<<<<< HEAD
-                label = None
-                for k in CLASS_LABELS.keys():
-                    if k in filename:
-=======
+
                 
                 label = None
                 for k in CLASS_LABELS.keys():
                     if k in filename:  
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
                         label = k
                         break
                 if label is None:
@@ -55,10 +48,8 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
 
                 training_data[label].append(df)
 
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     test_dir = os.path.join(data_path, "test")
     if os.path.exists(test_dir):
         for filename in os.listdir(test_dir):
@@ -129,10 +120,8 @@ def highpass_fft_batch(X, sampling_rate=1.0, cutoff=0.05):
     return X_clean
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
+
 if __name__ == "__main__":
     data_path = "data"
     removed_filtered_columns = []

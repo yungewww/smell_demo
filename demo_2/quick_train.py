@@ -13,20 +13,16 @@ from models.transformer import Transformer
 from config import CLASS_LABELS, DEVICE, DATA_PATH, SAVE_DIR, EPOCHS, LEARNING_RATE
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
+
 WINDOW_SIZE = 60
 STRIDE = 5
 CHANNELS = [0, 1, 2, 3]
 PROCESSING = ["standard_scaler", "diff_data_like"]
 CONFIG_NAME = "long_overlap_first_4"
 
-<<<<<<< HEAD
-=======
 
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
+
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 
@@ -45,10 +41,8 @@ def evaluate(model, loader, device, num_classes):
 def train():
     print(f"🚀 Training {CONFIG_NAME} ({PROCESSING})")
 
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     train_data, _ = load_sensor_data(DATA_PATH)
     if "diff_data_like" in PROCESSING:
         train_data = diff_data_like(train_data)
@@ -56,26 +50,19 @@ def train():
     X_train, y_train = build_sliding_data(train_data, WINDOW_SIZE, STRIDE)
     X_train = X_train[:, :, CHANNELS]
 
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train.reshape(-1, X_train.shape[-1])).reshape(
         X_train.shape
     )
 
-<<<<<<< HEAD
-    X_train = torch.tensor(X_train, dtype=torch.float32)
-    y_train = torch.tensor(y_train, dtype=torch.long)
 
-=======
     
     X_train = torch.tensor(X_train, dtype=torch.float32)
     y_train = torch.tensor(y_train, dtype=torch.long)
 
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     val_ratio = 0.2
     n_val = int(len(X_train) * val_ratio)
     n_train = len(X_train) - n_val
@@ -88,10 +75,8 @@ def train():
     train_loader = DataLoader(train_ds, batch_size=32, shuffle=True)
     val_loader = DataLoader(val_ds, batch_size=32)
 
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     num_classes = len(CLASS_LABELS)
     input_dim = len(CHANNELS)
     model = Transformer(
@@ -139,10 +124,8 @@ def train():
                 print("⏹ Early stopping.")
                 break
 
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     model_path = os.path.join(
         SAVE_DIR,

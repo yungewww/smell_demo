@@ -2,19 +2,14 @@ import re
 import pandas as pd
 from pathlib import Path
 
-<<<<<<< HEAD
-LOG_PATH = "log/log_2025-10-22_13-48-21.txt"
-=======
+
 LOG_PATH = "log/log_2025-10-22_13-48-21.txt"  
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 
 
 def parse_log(log_text):
     results = []
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     blocks = re.split(r"\n🧩 Config:", log_text)
     for block in blocks[1:]:
         config_match = re.search(r"(\w+).*window=(\d+), stride=(\d+)", block)
@@ -29,10 +24,8 @@ def parse_log(log_text):
         selected_indices = channels.group(1) if channels else "?"
         data_processing = data_proc.group(1).strip() if data_proc else "None"
 
-<<<<<<< HEAD
-=======
+
         
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
         def extract_section(title):
             pattern = rf"📊 {title} Results[\s\S]*?(?=\n📊|\Z)"
             section = re.search(pattern, block)
@@ -52,10 +45,8 @@ def parse_log(log_text):
         train_acc = extract_section("Train")
         test_acc = extract_section("Test")
 
-<<<<<<< HEAD
-=======
+
         
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
         online_blocks = re.findall(r"📄 File:[\s\S]*?🏁 Final Decision:.*", block)
         online_details = []
         vote_scores = []
@@ -91,10 +82,8 @@ def parse_log(log_text):
             )
             online_details.append(detail)
 
-<<<<<<< HEAD
-=======
+
         
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
         final_vote_acc = (
             round(sum(vote_scores) / len(vote_scores), 3) if vote_scores else None
         )
@@ -102,10 +91,8 @@ def parse_log(log_text):
         test_overall = test_acc.get("Overall", 0.0)
         overfit_gap = round(train_overall - test_overall, 2)
 
-<<<<<<< HEAD
-=======
+
         
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
         row = {
             "Config": config_name,
             "Window": window,
@@ -120,18 +107,7 @@ def parse_log(log_text):
         }
         results.append(row)
 
-<<<<<<< HEAD
-    # df = pd.DataFrame(results)
-    # df = df.sort_values(by="Final_Vote_Accuracy", ascending=False, na_position="last")
-    # return df
-    df = pd.DataFrame(results)
 
-    df["Overfitting_Gap"] = df["Overfitting_Gap"].fillna(999)
-    df["Final_Vote_Accuracy"] = df["Final_Vote_Accuracy"].fillna(-999)
-
-    df["Abs_Overfitting_Gap"] = df["Overfitting_Gap"].abs()
-
-=======
     
     # df = pd.DataFrame(results)
     # df = df.sort_values(by="Final_Vote_Accuracy", ascending=False, na_position="last")
@@ -147,7 +123,6 @@ def parse_log(log_text):
     df["Abs_Overfitting_Gap"] = df["Overfitting_Gap"].abs()
 
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     df = df.sort_values(
         by=["Final_Vote_Accuracy", "Abs_Overfitting_Gap"],
         ascending=[False, True],

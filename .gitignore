@@ -2,14 +2,16 @@
 venv/
 */venv/
 **/venv/
-<<<<<<< HEAD
 
-# 忽略缓存
+# 忽略 Python 缓存文件
 __pycache__/
 */__pycache__/
 **/__pycache__/
+*.pyc
+*.pyo
 
 # 忽略清理脚本
-=======
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 clean.py
+
+# macOS 系统文件
+.DS_Store

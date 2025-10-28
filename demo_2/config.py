@@ -1,9 +1,6 @@
 import torch
 
-<<<<<<< HEAD
-WINDOW_CONFIGS = {
-    "long_overlap": {"window_size": 60, "stride": 5},
-=======
+
 
 
 
@@ -13,7 +10,6 @@ WINDOW_CONFIGS = {
     
     
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 }
 
 CHANNEL = {
@@ -32,11 +28,9 @@ CHANNEL = {
 }
 
 SELECTED_INDICES = {
-<<<<<<< HEAD
-=======
+
     
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     "first_4": [0, 1, 2, 3],
     "no_benzene": [
         0,
@@ -50,11 +44,8 @@ SELECTED_INDICES = {
         9,
         10,
         11,
-<<<<<<< HEAD
-    ],
-=======
+
     ],  
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     "no_benzene_no_alcohol": [0, 1, 2, 3, 5, 7, 8, 9, 10, 11],
 }
 
@@ -69,10 +60,8 @@ CLASS_LABELS = {
     "oregano": 2,
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
+
 SEED = 42
 BATCH_SIZE = 32
 EPOCHS = 50
@@ -81,10 +70,8 @@ VAL_RATIO = 0.2
 SAVE_DIR = "checkpoints"
 DATA_PATH = "data"
 
-<<<<<<< HEAD
-=======
 
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
+
 if torch.backends.mps.is_available():
     DEVICE = torch.device("mps")  # ✅ Apple Silicon GPU
 elif torch.cuda.is_available():

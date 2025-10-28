@@ -26,10 +26,8 @@ CHART_HEIGHT = 560
 WINDOW_SIZE = 60
 STRIDE = 5
 
-<<<<<<< HEAD
-=======
 
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
+
 MODEL_PATH = "checkpoints/long_overlap_first_4_win60_str5_procstandard_scaler_diff_data_like_20251022_143356.pt"
 SCALER_PATH = "checkpoints/long_overlap_first_4_scaler_20251022_143356.pkl"
 
@@ -123,24 +121,18 @@ def build_pred_fig_from_votes(vote_counts: dict):
 
 
 # def preprocess(df: pd.DataFrame):
-<<<<<<< HEAD
-=======
+
 #     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     df = df.select_dtypes(include=[np.number]).iloc[:, :4].copy()
 #     if df.empty or len(df) < 80:
 #         print(f"[WARN] CSV invalid: {df.shape}")
 #         return None
 
-<<<<<<< HEAD
-#     df = diff_data_like(df)
 
-=======
 
 #     df = diff_data_like(df)
 
 
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     try:
 #         df_np = SCALER.transform(df.values)
 #     except Exception as e:
@@ -157,15 +149,11 @@ def preprocess(df: pd.DataFrame):
         print(f"[WARN] CSV invalid: {df.shape}")
         return None
 
-<<<<<<< HEAD
-    df = df.diff(periods=25).iloc[25:]
 
-=======
     
     df = df.diff(periods=25).iloc[25:]
 
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     try:
         df_np = SCALER.transform(df.values)
     except Exception as e:
@@ -248,10 +236,8 @@ def update_predictions(_n):
     if arr is None or len(arr) < WINDOW_SIZE:
         return empty_pred_fig()
 
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     windows = [
         arr[i : i + WINDOW_SIZE] for i in range(0, len(arr) - WINDOW_SIZE + 1, STRIDE)
     ]
@@ -262,10 +248,8 @@ def update_predictions(_n):
             logits = MODEL(X)
             preds.append(int(torch.argmax(logits, dim=1).cpu()))
 
-<<<<<<< HEAD
-=======
+
     
->>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     idx2cls = {v: k for k, v in CLASS_LABELS.items()}
     counts = {cls: 0 for cls in idx2cls.values()}
     for p in preds:
