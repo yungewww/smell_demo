@@ -134,9 +134,15 @@ class Transformer(nn.Module):
 
 if __name__ == "__main__":
     model = Transformer(
+<<<<<<< HEAD
         input_dim=12,
         model_dim=128,
         num_classes=3,
+=======
+        input_dim=12,  
+        model_dim=128,
+        num_classes=3,  
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
         num_heads=4,
         num_layers=3,
     )

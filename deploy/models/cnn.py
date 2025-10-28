@@ -9,9 +9,16 @@ from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 
 
+<<<<<<< HEAD
 data_path = "task4/data"
 seconds = 60
 sampling_rate = 1
+=======
+
+data_path = "task4/data"  
+seconds = 60  
+sampling_rate = 1  
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 channels = 12
 batch_size = 16
 epochs = 50
@@ -19,6 +26,10 @@ lr = 1e-4
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 class SensorDataset(Dataset):
     def __init__(self, base_dir):
         self.samples = []
@@ -35,12 +46,22 @@ class SensorDataset(Dataset):
                     continue
                 path = os.path.join(class_dir, f)
                 df = pd.read_csv(path)
+<<<<<<< HEAD
                 df = df.iloc[: self.max_len, :channels]
                 if len(df) < self.max_len:
+=======
+                df = df.iloc[: self.max_len, :channels]  
+                if len(df) < self.max_len:
+                    
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
                     pad = np.zeros((self.max_len - len(df), df.shape[1]))
                     df = np.vstack([df.values, pad])
                 else:
                     df = df.values
+<<<<<<< HEAD
+=======
+                
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
                 df = StandardScaler().fit_transform(df)
                 self.samples.append(df)
                 self.labels.append(label_idx)
@@ -62,6 +83,10 @@ class SensorDataset(Dataset):
         return x, torch.tensor(y, dtype=torch.long)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 class SimpleCNN(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
@@ -88,6 +113,10 @@ class SimpleCNN(nn.Module):
         return self.fc(x)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 train_dir = os.path.join(data_path, "train")
 test_dir = os.path.join(data_path, "test")
 
@@ -97,6 +126,10 @@ test_dataset = SensorDataset(test_dir)
 num_classes = len(train_dataset.class_names)
 print(f"Classes: {train_dataset.class_names}")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 val_size = int(0.2 * len(train_dataset))
 train_size = len(train_dataset) - val_size
 train_ds, val_ds = random_split(train_dataset, [train_size, val_size])
@@ -106,11 +139,19 @@ val_loader = DataLoader(val_ds, batch_size=batch_size)
 test_loader = DataLoader(test_dataset, batch_size=batch_size)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 model = SimpleCNN(num_classes).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=1e-4)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 def train(model, loader, optimizer, criterion):
     model.train()
     total_loss, total_correct, total = 0, 0, 0
@@ -127,6 +168,10 @@ def train(model, loader, optimizer, criterion):
     return total_loss / total, 100.0 * total_correct / total
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 @torch.no_grad()
 def evaluate(model, loader):
     model.eval()
@@ -147,6 +192,10 @@ def evaluate(model, loader):
     return acc, per_class_acc
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 best_val = 0
 for epoch in range(1, epochs + 1):
     train_loss, train_acc = train(model, train_loader, optimizer, criterion)
@@ -160,15 +209,28 @@ for epoch in range(1, epochs + 1):
         print(f"💾 Saved best model ({val_acc:.2f}%)")
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # model.load_state_dict(torch.load("task4/checkpoints/cnn_best.pt", map_location=device))
 # test_acc, per_class_acc = evaluate(model, test_loader)
 # print(f"\n✅ Test Accuracy: {test_acc:.2f}%")
 # for cls, acc in zip(train_dataset.class_names, per_class_acc):
 #     print(f"{cls:<15}: {acc:.2f}%")
 
+<<<<<<< HEAD
 model.load_state_dict(torch.load("task4/checkpoints/cnn_best.pt", map_location=device))
 
 train_acc, per_class_acc_train = evaluate(model, train_loader)
+=======
+
+model.load_state_dict(torch.load("task4/checkpoints/cnn_best.pt", map_location=device))
+
+
+train_acc, per_class_acc_train = evaluate(model, train_loader)
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 test_acc, per_class_acc_test = evaluate(model, test_loader)
 
 print("\n📊 Evaluation Results")

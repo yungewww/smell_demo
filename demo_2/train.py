@@ -31,6 +31,10 @@
 # )
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # def setup_logger():
 #     os.makedirs("log", exist_ok=True)
 #     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -55,6 +59,10 @@
 #         self.log.flush()
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # def ensure_dir(path):
 #     os.makedirs(path, exist_ok=True)
 
@@ -81,6 +89,10 @@
 
 
 # def load_online_data(online_dir, window_size, stride):
+<<<<<<< HEAD
+=======
+#     
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     if not os.path.exists(online_dir):
 #         return None, []
 #     files = [f for f in os.listdir(online_dir) if f.endswith(".csv")]
@@ -110,6 +122,10 @@
 #     return DataLoader(TensorDataset(X, y), batch_size=batch_size, shuffle=False)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # def train_and_eval(
 #     config_name, window_size, stride, indices, processing_combo, summary
 # ):
@@ -117,6 +133,10 @@
 #     print(f"   Selected Channels: {indices}")
 #     print(f"   Data Processing: {processing_combo if processing_combo else 'None'}")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     train_data, test_data = load_sensor_data(DATA_PATH)
 #     if "diff_data_like" in processing_combo:
 #         train_data = diff_data_like(train_data)
@@ -162,6 +182,10 @@
 #     val_loader = DataLoader(val_ds, batch_size=32)
 #     test_loader = DataLoader(TensorDataset(X_test, y_test), batch_size=32)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     model = Transformer(
 #         input_dim=input_dim,
 #         model_dim=128,
@@ -174,12 +198,20 @@
 
 #     print("🚀 Start Training...\n")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     patience = 5
 #     best_val_acc = 0.0
 #     epochs_no_improve = 0
 #     best_epoch = 0
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     for epoch in range(1, EPOCHS + 1):
 #         model.train()
 #         total_loss, total_correct, total_samples = 0.0, 0, 0
@@ -203,10 +235,18 @@
 #             f"[{config_name}] Epoch {epoch:02d} | loss={avg_loss:.4f} | train={train_acc:.2f}% | val={val_acc:.2f}%"
 #         )
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #         if val_acc > best_val_acc:
 #             best_val_acc = val_acc
 #             best_epoch = epoch
 #             epochs_no_improve = 0
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #         else:
 #             epochs_no_improve += 1
 #             if epochs_no_improve >= patience:
@@ -219,6 +259,10 @@
 #                 )
 #                 break
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     ensure_dir("checkpoints")
 #     model_path = os.path.join(
 #         "checkpoints",
@@ -227,6 +271,10 @@
 #     torch.save(best_state or model.state_dict(), model_path)
 #     print(f"💾 Best model saved to: {model_path}")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     overall_train, per_train = evaluate(model, train_loader, DEVICE, num_classes)
 #     overall_test, per_test = evaluate(model, test_loader, DEVICE, num_classes)
 
@@ -240,6 +288,10 @@
 #     for name, i in CLASS_LABELS.items():
 #         print(f"{name:<15}: {per_test[i]:.2f}%")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     online_dir = "data/online"
 #     csv_files = (
 #         [f for f in os.listdir(online_dir) if f.endswith(".csv")]
@@ -259,6 +311,10 @@
 #                 continue
 #             true_label = csv_file.split(".")[0]
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #             if "diff_data_like" in processing_combo:
 #                 df = df.diff(periods=25).iloc[25:]
 #             if "highpass_fft_batch" in processing_combo:
@@ -304,6 +360,10 @@
 #             print(f"🏁 Final Decision: {pred_class} ({counts[winner]} / {len(preds)})")
 #             print("──────────────────────────────────────────────")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     summary.append(
 #         {
 #             "config": config_name,
@@ -317,6 +377,10 @@
 #     )
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # if __name__ == "__main__":
 #     log_path = setup_logger()
 #     print("📦 Multi-Condition Training + Eval (No Save) Start\n")
@@ -391,6 +455,10 @@ from config import (
 )
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 def setup_logger():
     os.makedirs("log", exist_ok=True)
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -415,6 +483,10 @@ class Logger(object):
         self.log.flush()
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 def ensure_dir(path):
     os.makedirs(path, exist_ok=True)
 
@@ -470,6 +542,10 @@ def make_loader(X, y, batch_size=32):
     return DataLoader(TensorDataset(X, y), batch_size=batch_size, shuffle=False)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 def train_and_eval(
     config_name, window_size, stride, indices, processing_combo, summary
 ):
@@ -477,6 +553,10 @@ def train_and_eval(
     print(f"   Selected Channels: {indices}")
     print(f"   Data Processing: {processing_combo if processing_combo else 'None'}")
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     train_data, _ = load_sensor_data(DATA_PATH)
     if "diff_data_like" in processing_combo:
         train_data = diff_data_like(train_data)
@@ -512,6 +592,10 @@ def train_and_eval(
     train_loader = DataLoader(train_ds, batch_size=32, shuffle=True, drop_last=True)
     val_loader = DataLoader(val_ds, batch_size=32)
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     model = Transformer(
         input_dim=input_dim,
         model_dim=128,
@@ -598,7 +682,11 @@ def train_and_eval(
         class_names = list(CLASS_LABELS.keys())
 
         total_windows = 0
+<<<<<<< HEAD
         correct_windows = 0
+=======
+        correct_windows = 0  
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 
         for csv_file in csv_files:
             path = os.path.join(online_dir, csv_file)
@@ -643,6 +731,10 @@ def train_and_eval(
             pred_class = class_names[winner]
             correct = "✅" if pred_class == true_label else "❌"
 
+<<<<<<< HEAD
+=======
+            
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
             true_idx = CLASS_LABELS.get(true_label, -1)
             if true_idx != -1:
                 correct_windows += (preds == true_idx).sum()
@@ -658,6 +750,10 @@ def train_and_eval(
             print(f"🏁 Final Decision: {pred_class} ({counts[winner]} / {len(preds)})")
             print("──────────────────────────────────────────────")
 
+<<<<<<< HEAD
+=======
+        
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
         if total_windows > 0:
             final_window_acc = correct_windows / total_windows
             print(f"\n✅ Final window-level accuracy: {final_window_acc:.3f}")
@@ -674,6 +770,10 @@ def train_and_eval(
     )
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 if __name__ == "__main__":
     log_path = setup_logger()
     print("📦 Multi-Condition Training + Eval (Train + Online Only)\n")
@@ -687,7 +787,11 @@ if __name__ == "__main__":
 
     for config_name, cfg in WINDOW_CONFIGS.items():
         # for indices in selected_sets:
+<<<<<<< HEAD
         for set_name, indices in SELECTED_INDICES.items():
+=======
+        for set_name, indices in SELECTED_INDICES.items():  
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
             for proc_combo in processing_combos:
                 train_and_eval(
                     f"{config_name}_{set_name}",
@@ -715,4 +819,8 @@ if __name__ == "__main__":
         "────────────────────────────────────────────────────────────────────────────"
     )
     print("🎉 All training + online evaluation finished.")
+<<<<<<< HEAD
     print(f"📁 Logs saved to: {log_path}")
+=======
+    print(f"📁 Logs saved to: {log_path}")
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235

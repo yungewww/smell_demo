@@ -30,7 +30,7 @@ def load_model(model_path, input_dim, num_classes):
 
 
 def predict_online(model, df, window_size, stride, processing_combo):
-    """对单个CSV做推理并返回预测结果"""
+    
     df = df.select_dtypes(include=[np.number])
     if df.empty:
         return None
@@ -71,6 +71,10 @@ if __name__ == "__main__":
     num_classes = len(CLASS_LABELS)
 
     for model_file in model_files:
+<<<<<<< HEAD
+=======
+        
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
         parts = model_file.split("_")
         try:
             win = int([p for p in parts if p.startswith("win")][0][3:])
@@ -83,6 +87,10 @@ if __name__ == "__main__":
         model_path = os.path.join(CHECKPOINT_DIR, model_file)
         print(f"🧩 Testing model: {model_file}")
 
+<<<<<<< HEAD
+=======
+        
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
         sample_df = pd.read_csv(os.path.join(ONLINE_DIR, online_files[0]))
         input_dim = sample_df.select_dtypes(include=[np.number]).shape[1]
         model = load_model(model_path, input_dim, num_classes)

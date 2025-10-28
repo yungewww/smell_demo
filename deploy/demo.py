@@ -103,10 +103,20 @@
 
 
 # # def load_model():
+<<<<<<< HEAD
 # #     model_path = "checkpoints/long_overlap_first_4_win60_str5_procstandard_scaler_diff_data_like_20251022_134936.pt"
 
 # #     num_classes = len(CLASS_LABELS)
 
+=======
+
+# #     model_path = "checkpoints/long_overlap_first_4_win60_str5_procstandard_scaler_diff_data_like_20251022_134936.pt"
+
+
+# #     num_classes = len(CLASS_LABELS)
+
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # #     model = Transformer(
 # #         input_dim=input_dim,
 # #         model_dim=128,
@@ -115,6 +125,10 @@
 # #         num_layers=3,
 # #     ).to(DEVICE)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # #     state = torch.load(model_path, map_location=DEVICE)
 # #     model.load_state_dict(state)
 # #     model.eval()
@@ -124,6 +138,7 @@
 
 
 # # # def predict_proba_from_dataframe(model, df: pd.DataFrame, classes):
+<<<<<<< HEAD
 # # #     """
 # # #     Return dict {class_name: probability} summing to ~1.
 # # #     Replace with your real model inference.
@@ -144,6 +159,9 @@
 # # def predict_proba_from_dataframe(model, df: pd.DataFrame, classes):
 # #     """
 # #     """
+=======
+# # #     
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # #     import torch
 # #     import numpy as np
 
@@ -152,6 +170,10 @@
 
 # #     df = df.select_dtypes(include=[np.number]).iloc[:, :4]
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 # #     X = torch.tensor(df.select_dtypes(include=[np.number]).values, dtype=torch.float32)
 # #     if X.ndim == 2:
 # #         X = X.unsqueeze(0)  # (1, T, D)
@@ -213,35 +235,9 @@
 
 
 # # def build_pred_fig_from_probs(vals: dict):
-# #     """vals: normalized probs for each class in PRED_CLASSES"""
-# #     best = max(vals, key=vals.get) if vals else None
-# #     fig = go.Figure()
-# #     bottom = 0.0
-# #     for cls in PRED_CLASSES:
-# #         p = float(vals.get(cls, 0.0))
-# #         color = "green" if cls == best else "lightgray"
-# #         fig.add_trace(
-# #             go.Bar(
-# #                 x=["Prediction"],
-# #                 y=[p],
-# #                 name=cls,
-# #                 marker=dict(color=color),
-# #                 showlegend=False,
-# #                 hovertemplate=f"{cls}: %{{y:.1%}}<extra></extra>",
-# #             )
-# #         )
-# #         if p > 0:
-# #             fig.add_annotation(
-# #                 x="Prediction",
-# #                 y=bottom + p / 2,
-# #                 text=f"{p*100:.1f}% — {cls}",
-# #                 showarrow=False,
-# #                 xanchor="center",
-# #                 yanchor="middle",
-# #                 font=dict(size=14, color="white" if cls == best else "black"),
-# #             )
-# #         bottom += p
+# #     
 
+<<<<<<< HEAD
 # #     fig.update_layout(
 # #         barmode="stack",
 # #         yaxis=dict(range=[0, 1], title="Probability", tickformat=".0%"),
@@ -494,6 +490,15 @@
 
 #     df = df.select_dtypes(include=[np.number]).iloc[:, :4].copy()
 
+=======
+#     if not isinstance(df, pd.DataFrame):
+#         df = pd.DataFrame(df)
+
+
+#     df = df.select_dtypes(include=[np.number]).iloc[:, :4].copy()
+
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     if df.empty or len(df) < 80:
 #         print(f"[WARN] CSV invalid: df shape={df.shape}")
 #         return None
@@ -501,6 +506,10 @@
 #     # ==== Step 1: diff_data_like ====
 #     try:
 #         if hasattr(df, "diff"):
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #         else:
 #             print("[WARN] df has no diff method; skipping diff")
 #     except Exception as e:
@@ -598,6 +607,10 @@
 #     if arr is None or len(arr) < WINDOW_SIZE:
 #         return empty_pred_fig()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     windows = [
 #         arr[i : i + WINDOW_SIZE] for i in range(0, len(arr) - WINDOW_SIZE + 1, STRIDE)
 #     ]
@@ -608,6 +621,10 @@
 #             logits = MODEL(X)
 #             preds.append(int(torch.argmax(logits, dim=1).cpu()))
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     idx2cls = {v: k for k, v in CLASS_LABELS.items()}
 #     counts = {cls: 0 for cls in idx2cls.values()}
 #     for p in preds:
@@ -651,6 +668,10 @@ CHART_HEIGHT = 560
 WINDOW_SIZE = 60
 STRIDE = 5
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 MODEL_PATH = "checkpoints/long_overlap_first_4_win60_str5_procstandard_scaler_diff_data_like_20251022_143356.pt"
 SCALER_PATH = "checkpoints/long_overlap_first_4_scaler_20251022_143356.pkl"
 
@@ -744,13 +765,24 @@ def build_pred_fig_from_votes(vote_counts: dict):
 
 
 # def preprocess(df: pd.DataFrame):
+<<<<<<< HEAD
+=======
+#     
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     df = df.select_dtypes(include=[np.number]).iloc[:, :4].copy()
 #     if df.empty or len(df) < 80:
 #         print(f"[WARN] CSV invalid: {df.shape}")
 #         return None
 
+<<<<<<< HEAD
 #     df = diff_data_like(df)
 
+=======
+
+#     df = diff_data_like(df)
+
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 #     try:
 #         df_np = SCALER.transform(df.values)
 #     except Exception as e:
@@ -761,14 +793,21 @@ def build_pred_fig_from_votes(vote_counts: dict):
 
 
 def preprocess(df: pd.DataFrame):
-    """将输入CSV转为模型输入窗口数据，与训练时一致"""
+    
     df = df.select_dtypes(include=[np.number]).iloc[:, :4].copy()
     if df.empty or len(df) < 80:
         print(f"[WARN] CSV invalid: {df.shape}")
         return None
 
+<<<<<<< HEAD
     df = df.diff(periods=25).iloc[25:]
 
+=======
+    
+    df = df.diff(periods=25).iloc[25:]
+
+    
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     try:
         df_np = SCALER.transform(df.values)
     except Exception as e:
@@ -851,6 +890,10 @@ def update_predictions(_n):
     if arr is None or len(arr) < WINDOW_SIZE:
         return empty_pred_fig()
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     windows = [
         arr[i : i + WINDOW_SIZE] for i in range(0, len(arr) - WINDOW_SIZE + 1, STRIDE)
     ]
@@ -861,6 +904,10 @@ def update_predictions(_n):
             logits = MODEL(X)
             preds.append(int(torch.argmax(logits, dim=1).cpu()))
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     idx2cls = {v: k for k, v in CLASS_LABELS.items()}
     counts = {cls: 0 for cls in idx2cls.values()}
     for p in preds:

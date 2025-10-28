@@ -2,12 +2,20 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 DATA_DIR = "data/train"
 SAVE_DIR = "visuals"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 Y_MIN, Y_MAX = -100, 1000
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
 for filename in os.listdir(DATA_DIR):
     if not filename.endswith(".csv"):
         continue
@@ -15,6 +23,10 @@ for filename in os.listdir(DATA_DIR):
     csv_path = os.path.join(DATA_DIR, filename)
     df = pd.read_csv(csv_path)
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     fig, axes = plt.subplots(3, 4, figsize=(16, 9))
     axes = axes.flatten()
 
@@ -24,6 +36,10 @@ for filename in os.listdir(DATA_DIR):
         axes[i].set_ylim(Y_MIN, Y_MAX)
         axes[i].set_xticks([])
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> df11f5f239fc2fdc366756d13eab7f602ee3f235
     for j in range(len(df.columns), 12):
         axes[j].axis("off")
 
