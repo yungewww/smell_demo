@@ -71,7 +71,6 @@ if __name__ == "__main__":
     num_classes = len(CLASS_LABELS)
 
     for model_file in model_files:
-        # 从文件名解析参数
         parts = model_file.split("_")
         try:
             win = int([p for p in parts if p.startswith("win")][0][3:])
@@ -84,7 +83,6 @@ if __name__ == "__main__":
         model_path = os.path.join(CHECKPOINT_DIR, model_file)
         print(f"🧩 Testing model: {model_file}")
 
-        # 先从任意CSV取一行确定input_dim
         sample_df = pd.read_csv(os.path.join(ONLINE_DIR, online_files[0]))
         input_dim = sample_df.select_dtypes(include=[np.number]).shape[1]
         model = load_model(model_path, input_dim, num_classes)

@@ -26,7 +26,6 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
     training_data = defaultdict(list)
     testing_data = defaultdict(list)
 
-    # ---------- 训练集 ----------
     train_dir = os.path.join(data_path, "train")
     if os.path.exists(train_dir):
         for filename in os.listdir(train_dir):
@@ -39,10 +38,9 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
                 df = subtract_first_row(df)
                 df = df.drop(columns=removed_filtered_columns, errors="ignore")
 
-                # ✅ 根据文件名匹配类别（模糊匹配）
                 label = None
                 for k in CLASS_LABELS.keys():
-                    if k in filename:  # ← 改成根据文件名匹配
+                    if k in filename:
                         label = k
                         break
                 if label is None:
@@ -50,7 +48,6 @@ def load_sensor_data(data_path, removed_filtered_columns=None):
 
                 training_data[label].append(df)
 
-    # ---------- 测试集 ----------
     test_dir = os.path.join(data_path, "test")
     if os.path.exists(test_dir):
         for filename in os.listdir(test_dir):
@@ -121,7 +118,6 @@ def highpass_fft_batch(X, sampling_rate=1.0, cutoff=0.05):
     return X_clean
 
 
-# ========== 主函数 ==========
 if __name__ == "__main__":
     data_path = "data"
     removed_filtered_columns = []

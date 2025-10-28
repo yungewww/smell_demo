@@ -1,3 +1,12 @@
+# 忽略虚拟环境
 venv/
 */venv/
 **/venv/
+
+# 忽略缓存
+__pycache__/
+*/__pycache__/
+**/__pycache__/
+
+# 忽略清理脚本
+clean.py

@@ -2,8 +2,10 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-folder = "demo_data"
-save_path = "demo_data/all_csv_plots.png"
+
+folder = "demo_data"  
+save_path = "demo_data/all_csv_plots.png"  
+
 
 csv_files = [f for f in os.listdir(folder) if f.endswith(".csv")]
 
@@ -15,12 +17,15 @@ for i, filename in enumerate(csv_files):
     path = os.path.join(folder, filename)
     df = pd.read_csv(path)
 
+    
     df = df.dropna(axis=1, how="all")
 
+    
     if df.shape[1] > 1:
         df = df.iloc[:, 1:]
     if "Benzene" in df.columns:
         df = df.drop(columns=["Benzene"])
+    
     df.plot(ax=axes[i])
     axes[i].set_title(filename)
     axes[i].set_xlabel("Seconds")

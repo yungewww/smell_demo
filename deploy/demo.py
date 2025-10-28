@@ -103,13 +103,10 @@
 
 
 # # def load_model():
-# #     # 你的模型路径
 # #     model_path = "checkpoints/long_overlap_first_4_win60_str5_procstandard_scaler_diff_data_like_20251022_134936.pt"
 
-# #     input_dim = 4  # ✅ 对应 first_4 通道
 # #     num_classes = len(CLASS_LABELS)
 
-# #     # 建立同样结构的 Transformer
 # #     model = Transformer(
 # #         input_dim=input_dim,
 # #         model_dim=128,
@@ -118,7 +115,6 @@
 # #         num_layers=3,
 # #     ).to(DEVICE)
 
-# #     # 加载权重
 # #     state = torch.load(model_path, map_location=DEVICE)
 # #     model.load_state_dict(state)
 # #     model.eval()
@@ -147,7 +143,6 @@
 
 # # def predict_proba_from_dataframe(model, df: pd.DataFrame, classes):
 # #     """
-# #     从 DataFrame 生成模型预测概率
 # #     """
 # #     import torch
 # #     import numpy as np
@@ -157,7 +152,6 @@
 
 # #     df = df.select_dtypes(include=[np.number]).iloc[:, :4]
 
-# #     # 选取数值列并转换为 tensor
 # #     X = torch.tensor(df.select_dtypes(include=[np.number]).values, dtype=torch.float32)
 # #     if X.ndim == 2:
 # #         X = X.unsqueeze(0)  # (1, T, D)
@@ -494,17 +488,12 @@
 
 # def preprocess(df: pd.DataFrame):
 #     """
-#     将输入CSV转为模型输入窗口数据（与训练时一致）。
-#     安全防御：如果df不合法或包含错误格式，不报错中断，而是返回None。
 #     """
-#     # 保证是DataFrame
 #     if not isinstance(df, pd.DataFrame):
 #         df = pd.DataFrame(df)
 
-#     # 保留前4个数值通道
 #     df = df.select_dtypes(include=[np.number]).iloc[:, :4].copy()
 
-#     # 如果CSV里不是数字或行太少
 #     if df.empty or len(df) < 80:
 #         print(f"[WARN] CSV invalid: df shape={df.shape}")
 #         return None
@@ -512,7 +501,6 @@
 #     # ==== Step 1: diff_data_like ====
 #     try:
 #         if hasattr(df, "diff"):
-#             df = df.diff(periods=25).iloc[25:]  # ✅ 硬编码 periods=25 与训练一致
 #         else:
 #             print("[WARN] df has no diff method; skipping diff")
 #     except Exception as e:
@@ -610,7 +598,6 @@
 #     if arr is None or len(arr) < WINDOW_SIZE:
 #         return empty_pred_fig()
 
-#     # 创建所有窗口
 #     windows = [
 #         arr[i : i + WINDOW_SIZE] for i in range(0, len(arr) - WINDOW_SIZE + 1, STRIDE)
 #     ]
@@ -621,7 +608,6 @@
 #             logits = MODEL(X)
 #             preds.append(int(torch.argmax(logits, dim=1).cpu()))
 
-#     # 投票统计
 #     idx2cls = {v: k for k, v in CLASS_LABELS.items()}
 #     counts = {cls: 0 for cls in idx2cls.values()}
 #     for p in preds:
@@ -665,7 +651,6 @@ CHART_HEIGHT = 560
 WINDOW_SIZE = 60
 STRIDE = 5
 
-# 从最新训练的路径中读取
 MODEL_PATH = "checkpoints/long_overlap_first_4_win60_str5_procstandard_scaler_diff_data_like_20251022_143356.pt"
 SCALER_PATH = "checkpoints/long_overlap_first_4_scaler_20251022_143356.pkl"
 
@@ -759,16 +744,13 @@ def build_pred_fig_from_votes(vote_counts: dict):
 
 
 # def preprocess(df: pd.DataFrame):
-#     """将输入CSV转为模型输入窗口数据，保持和训练时完全一致。"""
 #     df = df.select_dtypes(include=[np.number]).iloc[:, :4].copy()
 #     if df.empty or len(df) < 80:
 #         print(f"[WARN] CSV invalid: {df.shape}")
 #         return None
 
-#     # Step1: 差分，与训练相同
 #     df = diff_data_like(df)
 
-#     # Step2: 标准化，使用训练好的 scaler
 #     try:
 #         df_np = SCALER.transform(df.values)
 #     except Exception as e:
@@ -785,10 +767,8 @@ def preprocess(df: pd.DataFrame):
         print(f"[WARN] CSV invalid: {df.shape}")
         return None
 
-    # Step1: 差分，与训练中 diff_data_like(df) 一致
     df = df.diff(periods=25).iloc[25:]
 
-    # Step2: 标准化，使用训练时保存的 scaler
     try:
         df_np = SCALER.transform(df.values)
     except Exception as e:
@@ -871,7 +851,6 @@ def update_predictions(_n):
     if arr is None or len(arr) < WINDOW_SIZE:
         return empty_pred_fig()
 
-    # 创建滑动窗口
     windows = [
         arr[i : i + WINDOW_SIZE] for i in range(0, len(arr) - WINDOW_SIZE + 1, STRIDE)
     ]
@@ -882,7 +861,6 @@ def update_predictions(_n):
             logits = MODEL(X)
             preds.append(int(torch.argmax(logits, dim=1).cpu()))
 
-    # 投票
     idx2cls = {v: k for k, v in CLASS_LABELS.items()}
     counts = {cls: 0 for cls in idx2cls.values()}
     for p in preds:
