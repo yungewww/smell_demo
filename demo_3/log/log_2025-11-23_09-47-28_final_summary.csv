@@ -1,0 +1,161 @@
+Config,Window,Stride,Channels,Data_Processing,Train_Overall,Train_bodai,Train_chienan,Train_go,Train_reihai,Train_rendai,Online_Details,Final_Vote_Accuracy,Overfitting_Gap,Abs_Overfitting_Gap
+no_overlap_long_first_4,100,100,"[0, 1, 2, 3]",['highpass_fft_batch'],21.88,100.0,0.0,0.0,0.0,0.0,,-999,21.88,21.88
+no_overlap_long_first_4,100,100,"[0, 1, 2, 3]","['standard_scaler', 'highpass_fft_batch']",21.88,100.0,0.0,0.0,0.0,0.0,,-999,21.88,21.88
+long_overlap_first_4,60,30,"[0, 1, 2, 3]",['highpass_fft_batch'],23.75,3.33,0.0,41.67,70.0,1.03,,-999,23.75,23.75
+no_overlap_long_first_4,100,100,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",24.22,100.0,0.0,0.0,0.0,0.0,,-999,24.22,24.22
+no_overlap_long_first_4,100,100,"[0, 1, 2, 3]","['diff_data_like', 'highpass_fft_batch']",25.78,100.0,0.0,0.0,0.0,0.0,,-999,25.78,25.78
+long_overlap_first_4,60,30,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",28.33,0.99,93.75,0.0,3.23,41.18,,-999,28.33,28.33
+long_overlap_first_4,60,30,"[0, 1, 2, 3]","['standard_scaler', 'highpass_fft_batch']",30.83,1.06,86.96,14.29,22.77,31.58,,-999,30.83,30.83
+no_overlap_long_no_benzene_no_alcohol,100,100,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],31.25,100.0,0.0,0.0,50.0,0.0,,-999,31.25,31.25
+short_overlap_first_4,10,5,"[0, 1, 2, 3]","['diff_data_like', 'highpass_fft_batch']",31.48,46.77,66.56,3.93,12.81,25.37,,-999,31.48,31.48
+no_overlap_long_no_benzene,100,100,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",32.03,100.0,4.0,0.0,47.83,0.0,,-999,32.03,32.03
+no_overlap_long_no_benzene_no_alcohol,100,100,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",32.03,88.46,7.41,0.0,45.83,18.52,,-999,32.03,32.03
+no_overlap_long_no_benzene_no_alcohol,100,100,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",32.81,100.0,0.0,0.0,48.0,0.0,,-999,32.81,32.81
+no_overlap_long_no_benzene_no_alcohol,100,100,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",32.81,100.0,0.0,0.0,46.15,0.0,,-999,32.81,32.81
+long_overlap_first_4,60,30,"[0, 1, 2, 3]","['diff_data_like', 'highpass_fft_batch']",33.33,21.78,85.57,0.0,18.68,37.62,,-999,33.33,33.33
+medium_overlap_first_4,30,15,"[0, 1, 2, 3]","['diff_data_like', 'highpass_fft_batch']",33.57,36.76,76.12,0.0,16.08,36.32,,-999,33.57,33.57
+short_overlap_first_4,10,5,"[0, 1, 2, 3]",['highpass_fft_batch'],35.22,14.8,47.18,33.01,17.0,63.17,,-999,35.22,35.22
+no_overlap_long_first_4,100,100,"[0, 1, 2, 3]",None,35.94,78.79,52.17,26.09,0.0,8.33,,-999,35.94,35.94
+no_overlap_long_first_4,100,100,"[0, 1, 2, 3]",['diff_data_like'],35.94,100.0,60.87,4.55,0.0,0.0,,-999,35.94,35.94
+no_overlap_long_first_6,100,100,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like']",36.72,96.55,70.37,0.0,0.0,0.0,,-999,36.72,36.72
+short_overlap_first_4,10,5,"[0, 1, 2, 3]","['standard_scaler', 'highpass_fft_batch']",37.5,28.69,60.13,23.44,21.37,53.14,,-999,37.5,37.5
+no_overlap_long_first_4,100,100,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like']",37.5,93.55,72.0,0.0,0.0,4.35,,-999,37.5,37.5
+no_overlap_short_first_4,20,20,"[0, 1, 2, 3]","['diff_data_like', 'highpass_fft_batch']",38.04,36.81,67.76,25.85,10.27,48.3,,-999,38.04,38.04
+no_overlap_long_first_6,100,100,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'highpass_fft_batch']",38.28,100.0,14.81,50.0,0.0,0.0,,-999,38.28,38.28
+no_overlap_short_no_benzene_no_alcohol,20,20,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],38.41,1.39,92.67,19.48,47.13,30.67,,-999,38.41,38.41
+no_overlap_long_first_6,100,100,"[0, 1, 2, 3, 4, 5]",['diff_data_like'],39.84,87.88,90.91,0.0,8.33,0.0,,-999,39.84,39.84
+no_overlap_long_no_benzene,100,100,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",39.84,100.0,0.0,41.67,52.17,0.0,,-999,39.84,39.84
+no_overlap_short_first_4,20,20,"[0, 1, 2, 3]",['highpass_fft_batch'],40.1,23.45,60.53,33.12,11.54,70.19,,-999,40.1,40.1
+medium_overlap_first_4,30,15,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",40.93,66.34,48.28,17.71,8.63,62.12,,-999,40.93,40.93
+no_overlap_short_first_4,20,20,"[0, 1, 2, 3]",['diff_data_like'],41.17,45.77,56.29,40.67,16.78,46.53,,-999,41.17,41.17
+no_overlap_long_first_6,100,100,"[0, 1, 2, 3, 4, 5]",['highpass_fft_batch'],41.41,17.86,88.46,16.0,50.0,36.0,,-999,41.41,41.41
+no_overlap_long_first_6,100,100,"[0, 1, 2, 3, 4, 5]","['diff_data_like', 'highpass_fft_batch']",41.41,96.67,87.5,0.0,0.0,13.64,,-999,41.41,41.41
+no_overlap_long_first_6,100,100,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",42.19,100.0,50.0,32.0,18.18,0.0,,-999,42.19,42.19
+short_overlap_no_benzene_no_alcohol,10,5,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",43.2,30.1,43.23,41.59,50.58,50.57,,-999,43.2,43.2
+no_overlap_short_first_4,20,20,"[0, 1, 2, 3]","['standard_scaler', 'highpass_fft_batch']",43.36,34.72,61.44,28.1,27.39,63.98,,-999,43.36,43.36
+long_overlap_no_benzene_no_alcohol,60,30,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",43.96,58.42,18.37,0.0,44.9,90.91,,-999,43.96,43.96
+no_overlap_short_no_benzene_no_alcohol,20,20,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",44.01,29.86,82.24,8.44,47.13,51.55,,-999,44.01,44.01
+short_overlap_no_benzene_no_alcohol,10,5,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",44.11,51.91,56.98,12.97,50.82,46.32,,-999,44.11,44.11
+no_overlap_long_first_4,100,100,"[0, 1, 2, 3]",['standard_scaler'],45.31,70.0,80.0,39.13,16.0,16.0,,-999,45.31,45.31
+no_overlap_long_no_benzene_no_alcohol,100,100,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['diff_data_like'],45.31,100.0,60.87,0.0,48.0,0.0,,-999,45.31,45.31
+short_overlap_first_4,10,5,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like']",45.53,46.1,55.18,29.67,46.48,49.19,,-999,45.53,45.53
+medium_overlap_first_4,30,15,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like']",45.67,67.49,60.78,29.84,25.51,42.93,,-999,45.67,45.67
+short_overlap_first_4,10,5,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",45.69,50.33,51.59,22.6,49.92,52.86,,-999,45.69,45.69
+short_overlap_first_4,10,5,"[0, 1, 2, 3]",['diff_data_like'],46.18,55.3,57.21,35.86,41.57,40.23,,-999,46.18,46.18
+no_overlap_short_first_4,20,20,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",46.2,45.14,72.55,18.0,18.12,78.57,,-999,46.2,46.2
+no_overlap_short_first_4,20,20,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like']",46.88,39.72,51.97,43.79,32.43,66.9,,-999,46.88,46.88
+no_overlap_short_first_6,20,20,"[0, 1, 2, 3, 4, 5]","['diff_data_like', 'highpass_fft_batch']",48.78,18.62,78.29,35.9,67.61,43.26,,-999,48.78,48.78
+medium_overlap_first_4,30,15,"[0, 1, 2, 3]",['highpass_fft_batch'],48.83,51.18,65.15,32.34,21.6,75.62,,-999,48.83,48.83
+no_overlap_short_first_6,20,20,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",50.14,69.06,62.16,43.42,22.82,54.73,,-999,50.14,50.14
+long_overlap_no_benzene_no_alcohol,60,30,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",50.62,52.04,66.3,0.0,63.64,66.67,,-999,50.62,50.62
+no_overlap_long_no_benzene_no_alcohol,100,100,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",50.78,80.77,79.31,8.0,45.83,33.33,,-999,50.78,50.78
+no_overlap_short_no_benzene_no_alcohol,20,20,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",51.22,42.96,49.67,31.54,66.67,65.31,,-999,51.22,51.22
+no_overlap_long_no_benzene,100,100,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",52.34,100.0,92.59,0.0,45.83,0.0,,-999,52.34,52.34
+medium_overlap_no_benzene_no_alcohol,30,15,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],52.93,48.34,74.24,13.43,57.75,71.14,,-999,52.93,52.93
+no_overlap_long_no_benzene,100,100,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['diff_data_like'],53.12,87.1,92.0,0.0,56.0,16.0,,-999,53.12,53.12
+no_overlap_long_no_benzene_no_alcohol,100,100,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",None,53.12,85.71,57.69,62.5,48.15,4.35,,-999,53.12,53.12
+long_overlap_first_6,60,30,"[0, 1, 2, 3, 4, 5]",['highpass_fft_batch'],53.33,11.83,73.96,43.0,93.0,41.76,,-999,53.33,53.33
+medium_overlap_no_benzene_no_alcohol,30,15,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",53.42,66.35,53.03,12.44,77.0,56.22,,-999,53.42,53.42
+medium_overlap_first_4,30,15,"[0, 1, 2, 3]",['diff_data_like'],53.53,46.27,59.7,51.83,37.5,72.36,,-999,53.53,53.53
+no_overlap_long_no_benzene,100,100,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],53.91,83.33,95.83,0.0,50.0,34.62,,-999,53.91,53.91
+no_overlap_short_no_benzene_no_alcohol,20,20,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",53.94,49.31,72.19,11.92,66.21,71.03,,-999,53.94,53.94
+short_overlap_no_benzene_no_alcohol,10,5,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],54.13,56.51,59.52,34.56,78.6,42.6,,-999,54.13,54.13
+medium_overlap_no_benzene_no_alcohol,30,15,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",54.13,49.75,69.5,12.11,64.29,72.91,,-999,54.13,54.13
+short_overlap_no_benzene_no_alcohol,10,5,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",54.34,42.07,75.68,35.62,67.81,48.86,,-999,54.34,54.34
+long_overlap_first_4,60,30,"[0, 1, 2, 3]",['diff_data_like'],54.38,61.22,64.58,60.0,29.47,56.44,,-999,54.38,54.38
+medium_overlap_first_4,30,15,"[0, 1, 2, 3]","['standard_scaler', 'highpass_fft_batch']",54.49,72.51,51.01,17.41,69.01,60.7,,-999,54.49,54.49
+no_overlap_short_first_6,20,20,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'highpass_fft_batch']",54.56,8.97,82.12,38.56,75.64,64.42,,-999,54.56,54.56
+short_overlap_no_benzene_no_alcohol,10,5,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['diff_data_like'],54.77,41.1,62.16,46.31,74.27,49.1,,-999,54.77,54.77
+no_overlap_short_no_benzene,20,20,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],55.99,63.45,70.39,41.94,47.1,57.76,,-999,55.99,55.99
+long_overlap_first_4,60,30,"[0, 1, 2, 3]","['standard_scaler', 'diff_data_like']",56.46,51.0,65.59,64.77,35.05,66.67,,-999,56.46,56.46
+long_overlap_no_benzene,60,30,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],57.29,75.0,78.35,44.33,50.0,39.8,,-999,57.29,57.29
+long_overlap_first_6,60,30,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",57.92,32.65,85.86,30.0,61.46,77.32,,-999,57.92,57.92
+medium_overlap_no_benzene_no_alcohol,30,15,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",58.06,51.23,70.79,35.08,59.39,72.86,,-999,58.06,58.06
+long_overlap_no_benzene_no_alcohol,60,30,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",58.12,33.68,82.29,21.88,73.2,79.17,,-999,58.12,58.12
+medium_overlap_no_benzene_no_alcohol,30,15,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",58.67,52.91,73.33,41.88,61.42,63.55,,-999,58.67,58.67
+short_overlap_first_6,10,5,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'highpass_fft_batch']",59.05,69.97,78.42,54.47,52.51,39.94,,-999,59.05,59.05
+short_overlap_no_benzene_no_alcohol,10,5,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",59.24,57.05,66.19,46.92,57.12,68.13,,-999,59.24,59.24
+no_overlap_short_no_benzene_no_alcohol,20,20,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",59.24,53.85,59.33,54.97,75.84,51.75,,-999,59.24,59.24
+long_overlap_no_benzene,60,30,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",59.38,87.0,83.33,35.96,43.75,44.44,,-999,59.38,59.38
+long_overlap_no_benzene_no_alcohol,60,30,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],59.38,43.3,80.41,19.59,86.46,67.74,,-999,59.38,59.38
+no_overlap_long_no_benzene,100,100,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",59.38,75.0,75.0,25.0,50.0,70.83,,-999,59.38,59.38
+medium_overlap_first_6,30,15,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'highpass_fft_batch']",59.47,63.03,91.41,54.23,51.17,38.31,,-999,59.47,59.47
+medium_overlap_no_benzene,30,15,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",59.68,87.38,70.0,47.34,50.25,41.71,,-999,59.68,59.68
+no_overlap_short_no_benzene,20,20,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['diff_data_like'],60.19,64.19,82.43,42.18,55.7,56.25,,-999,60.19,60.19
+medium_overlap_first_6,30,15,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",62.2,79.21,85.71,49.48,28.72,66.0,,-999,62.2,62.2
+no_overlap_short_no_benzene_no_alcohol,20,20,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['diff_data_like'],62.23,53.1,75.51,45.45,74.15,63.64,,-999,62.23,62.23
+long_overlap_first_6,60,30,"[0, 1, 2, 3, 4, 5]",['diff_data_like'],62.5,53.61,82.29,61.8,39.8,75.0,,-999,62.5,62.5
+long_overlap_no_benzene_no_alcohol,60,30,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['diff_data_like'],62.92,56.0,79.79,50.55,68.04,60.2,,-999,62.92,62.92
+long_overlap_first_6,60,30,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like']",63.54,64.0,75.79,51.69,47.92,77.0,,-999,63.54,63.54
+short_overlap_no_benzene,10,5,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",63.88,66.56,74.92,48.71,74.55,53.75,,-999,63.88,63.88
+long_overlap_no_benzene,60,30,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",64.58,88.17,79.59,39.18,54.17,62.5,,-999,64.58,64.58
+no_overlap_short_no_benzene,20,20,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",64.81,62.07,75.0,41.33,65.99,80.14,,-999,64.81,64.81
+no_overlap_long_first_6,100,100,"[0, 1, 2, 3, 4, 5]",None,64.84,84.0,89.29,54.17,42.31,52.0,,-999,64.84,64.84
+short_overlap_first_6,10,5,"[0, 1, 2, 3, 4, 5]",['highpass_fft_batch'],65.23,71.57,78.87,55.98,72.88,47.33,,-999,65.23,65.23
+no_overlap_short_first_6,20,20,"[0, 1, 2, 3, 4, 5]",['highpass_fft_batch'],65.36,43.45,86.09,50.0,66.03,79.63,,-999,65.36,65.36
+no_overlap_short_first_6,20,20,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like']",65.76,47.59,89.4,55.92,65.28,70.14,,-999,65.76,65.76
+no_overlap_short_no_benzene,20,20,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",66.02,56.25,82.35,47.4,61.29,81.48,,-999,66.02,66.02
+long_overlap_no_benzene,60,30,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",66.67,60.0,90.62,29.21,81.91,69.31,,-999,66.67,66.67
+short_overlap_first_6,10,5,"[0, 1, 2, 3, 4, 5]","['diff_data_like', 'highpass_fft_batch']",67.83,69.21,81.24,54.03,80.76,53.08,,-999,67.83,67.83
+medium_overlap_no_benzene_no_alcohol,30,15,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['diff_data_like'],68.35,73.4,76.5,48.96,74.11,68.0,,-999,68.35,68.35
+short_overlap_first_6,10,5,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like']",68.62,71.36,84.29,68.78,68.24,50.24,,-999,68.62,68.62
+long_overlap_no_benzene_no_alcohol,60,30,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",69.79,71.0,75.53,64.04,78.35,60.0,,-999,69.79,69.79
+no_overlap_short_no_benzene,20,20,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",69.84,56.16,84.67,55.1,71.62,81.38,,-999,69.84,69.84
+long_overlap_first_6,60,30,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'highpass_fft_batch']",70.21,51.65,88.66,65.0,67.71,77.08,,-999,70.21,70.21
+no_overlap_long_no_benzene,100,100,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",None,70.31,89.29,92.0,62.5,60.0,46.15,,-999,70.31,70.31
+short_overlap_no_benzene,10,5,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],70.54,82.04,82.42,63.64,85.67,39.64,,-999,70.54,70.54
+short_overlap_no_benzene,10,5,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",70.8,69.52,90.82,69.12,80.9,43.76,,-999,70.8,70.8
+short_overlap_first_6,10,5,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",71.58,57.74,84.24,70.6,89.03,55.77,,-999,71.58,71.58
+long_overlap_no_benzene,60,30,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",74.17,80.0,88.78,44.44,73.96,81.19,,-999,74.17,74.17
+medium_overlap_no_benzene,30,15,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'highpass_fft_batch']",74.71,61.14,92.42,63.68,98.12,57.71,,-999,74.71,74.71
+short_overlap_first_6,10,5,"[0, 1, 2, 3, 4, 5]",['diff_data_like'],74.77,76.74,77.87,77.66,71.97,69.74,,-999,74.77,74.77
+medium_overlap_first_6,30,15,"[0, 1, 2, 3, 4, 5]","['standard_scaler', 'diff_data_like']",75.1,65.37,91.58,56.08,70.56,90.95,,-999,75.1,75.1
+medium_overlap_first_6,30,15,"[0, 1, 2, 3, 4, 5]",['highpass_fft_batch'],75.88,81.04,80.81,76.62,77.46,63.18,,-999,75.88,75.88
+short_overlap_no_benzene,10,5,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",76.25,76.25,75.44,70.77,90.66,68.02,,-999,76.25,76.25
+medium_overlap_no_benzene,30,15,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like', 'highpass_fft_batch']",77.32,85.22,80.5,73.68,72.5,74.37,,-999,77.32,77.32
+long_overlap_no_benzene,60,30,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['diff_data_like'],77.71,64.89,80.61,88.64,66.33,88.24,,-999,77.71,77.71
+short_overlap_no_benzene,10,5,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",78.88,73.63,90.79,71.99,78.47,78.76,,-999,78.88,78.88
+medium_overlap_no_benzene,30,15,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['standard_scaler', 'diff_data_like']",78.93,68.81,92.57,67.72,71.0,93.97,,-999,78.93,78.93
+medium_overlap_first_6,30,15,"[0, 1, 2, 3, 4, 5]","['diff_data_like', 'highpass_fft_batch']",79.03,77.67,86.93,74.21,85.86,70.35,,-999,79.03,79.03
+long_overlap_first_6,60,30,"[0, 1, 2, 3, 4, 5]","['diff_data_like', 'highpass_fft_batch']",79.79,65.66,89.47,77.53,91.84,74.75,,-999,79.79,79.79
+no_overlap_short_first_6,20,20,"[0, 1, 2, 3, 4, 5]",['diff_data_like'],81.79,72.73,88.31,75.5,93.75,78.47,,-999,81.79,81.79
+no_overlap_short_no_benzene,20,20,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]","['diff_data_like', 'highpass_fft_batch']",83.97,90.97,85.33,83.66,95.86,63.89,,-999,83.97,83.97
+medium_overlap_no_benzene,30,15,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['diff_data_like'],87.5,87.32,88.44,90.53,97.99,73.37,,-999,87.5,87.5
+medium_overlap_first_4,30,15,"[0, 1, 2, 3]",None,87.99,83.41,88.38,98.51,77.0,93.53,,-999,87.99,87.99
+no_overlap_long_no_benzene_no_alcohol,100,100,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['standard_scaler'],88.28,79.31,89.29,85.19,90.91,100.0,,-999,88.28,88.28
+long_overlap_no_benzene_no_alcohol,60,30,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",None,89.79,79.79,88.66,100.0,81.0,100.0,,-999,89.79,89.79
+no_overlap_long_first_6,100,100,"[0, 1, 2, 3, 4, 5]",['standard_scaler'],89.84,96.15,100.0,80.77,75.0,96.15,,-999,89.84,89.84
+short_overlap_first_4,10,5,"[0, 1, 2, 3]",None,90.2,76.03,98.87,89.19,88.96,97.58,,-999,90.2,90.2
+short_overlap_no_benzene,10,5,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['diff_data_like'],90.26,93.03,89.79,92.96,98.04,77.76,,-999,90.26,90.26
+medium_overlap_first_6,30,15,"[0, 1, 2, 3, 4, 5]",['diff_data_like'],90.32,93.07,91.92,86.91,91.5,88.06,,-999,90.32,90.32
+no_overlap_short_first_4,20,20,"[0, 1, 2, 3]",['standard_scaler'],91.02,75.69,96.05,90.2,94.9,96.91,,-999,91.02,91.02
+no_overlap_short_no_benzene_no_alcohol,20,20,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",None,92.71,83.1,88.08,100.0,95.54,95.71,,-999,92.71,92.71
+short_overlap_first_4,10,5,"[0, 1, 2, 3]",['standard_scaler'],93.2,95.69,95.97,96.34,79.87,97.74,,-999,93.2,93.2
+long_overlap_first_4,60,30,"[0, 1, 2, 3]",None,93.33,89.47,91.49,97.96,89.47,97.96,,-999,93.33,93.33
+long_overlap_first_4,60,30,"[0, 1, 2, 3]",['standard_scaler'],93.33,90.32,96.88,89.36,89.9,100.0,,-999,93.33,93.33
+no_overlap_long_no_benzene,100,100,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['standard_scaler'],93.75,100.0,87.5,84.0,95.83,100.0,,-999,93.75,93.75
+medium_overlap_no_benzene,30,15,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['highpass_fft_batch'],94.34,98.58,94.95,90.55,99.06,88.06,,-999,94.34,94.34
+medium_overlap_first_4,30,15,"[0, 1, 2, 3]",['standard_scaler'],94.73,93.36,98.99,94.53,93.9,93.03,,-999,94.73,94.73
+no_overlap_short_first_4,20,20,"[0, 1, 2, 3]",None,95.44,88.97,98.03,97.4,96.77,95.68,,-999,95.44,95.44
+no_overlap_short_no_benzene_no_alcohol,20,20,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['standard_scaler'],95.96,95.17,96.73,92.16,97.45,98.12,,-999,95.96,95.96
+no_overlap_short_first_6,20,20,"[0, 1, 2, 3, 4, 5]",['standard_scaler'],96.35,94.44,99.34,91.5,96.79,99.39,,-999,96.35,96.35
+medium_overlap_no_benzene_no_alcohol,30,15,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",None,96.58,92.89,91.92,100.0,98.59,99.5,,-999,96.58,96.58
+short_overlap_no_benzene_no_alcohol,10,5,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",None,96.97,97.86,87.44,100.0,99.83,99.84,,-999,96.97,96.97
+no_overlap_short_no_benzene,20,20,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['standard_scaler'],97.01,100.0,99.33,92.26,94.87,98.77,,-999,97.01,97.01
+medium_overlap_first_6,30,15,"[0, 1, 2, 3, 4, 5]",['standard_scaler'],97.07,97.63,99.49,90.55,98.59,99.0,,-999,97.07,97.07
+long_overlap_first_6,60,30,"[0, 1, 2, 3, 4, 5]",None,97.92,93.75,98.96,97.94,98.99,100.0,,-999,97.92,97.92
+long_overlap_no_benzene_no_alcohol,60,30,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['standard_scaler'],98.12,97.87,98.95,95.83,98.99,98.96,,-999,98.12,98.12
+medium_overlap_no_benzene,30,15,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['standard_scaler'],98.14,94.31,100.0,96.52,100.0,100.0,,-999,98.14,98.14
+long_overlap_first_6,60,30,"[0, 1, 2, 3, 4, 5]",['standard_scaler'],98.33,98.95,100.0,93.62,98.99,100.0,,-999,98.33,98.33
+long_overlap_no_benzene,60,30,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['standard_scaler'],98.33,100.0,100.0,92.63,98.97,100.0,,-999,98.33,98.33
+short_overlap_no_benzene_no_alcohol,10,5,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['standard_scaler'],98.34,94.89,99.19,100.0,100.0,97.58,,-999,98.34,98.34
+short_overlap_first_6,10,5,"[0, 1, 2, 3, 4, 5]",None,98.89,99.34,100.0,99.68,95.49,99.84,,-999,98.89,98.89
+short_overlap_first_6,10,5,"[0, 1, 2, 3, 4, 5]",['standard_scaler'],99.06,96.53,99.68,99.84,100.0,99.2,,-999,99.06,99.06
+medium_overlap_no_benzene_no_alcohol,30,15,"[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]",['standard_scaler'],99.41,98.58,99.49,100.0,100.0,99.0,,-999,99.41,99.41
+no_overlap_short_first_6,20,20,"[0, 1, 2, 3, 4, 5]",None,99.48,98.6,100.0,100.0,99.36,99.39,,-999,99.48,99.48
+medium_overlap_first_6,30,15,"[0, 1, 2, 3, 4, 5]",None,99.61,100.0,98.99,100.0,99.06,100.0,,-999,99.61,99.61
+no_overlap_short_no_benzene,20,20,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",None,99.61,100.0,100.0,98.04,100.0,100.0,,-999,99.61,99.61
+short_overlap_no_benzene,10,5,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",['standard_scaler'],99.8,99.84,99.84,100.0,99.5,99.84,,-999,99.8,99.8
+short_overlap_no_benzene,10,5,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",None,100.0,100.0,100.0,100.0,100.0,100.0,,-999,100.0,100.0
+medium_overlap_no_benzene,30,15,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",None,100.0,100.0,100.0,100.0,100.0,100.0,,-999,100.0,100.0
+long_overlap_no_benzene,60,30,"[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]",None,100.0,100.0,100.0,100.0,100.0,100.0,,-999,100.0,100.0

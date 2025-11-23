@@ -1,0 +1,7 @@
+🧾 Logging to: log/log_2025-11-23_09-45-23.txt
+📦 Multi-Condition Training + Eval (Train + Online Only)
+
+
+🧩 Config: short_overlap_first_4 (window=10, stride=5)
+   Selected Channels: [0, 1, 2, 3]
+   Data Processing: None
