@@ -30,6 +30,7 @@ STRIDE = 30
 
 MODEL_PATH = (
     "checkpoints/long_overlap_first_6_win60_str30_procdiff_data_like_20251123_125136.pt"
+    # "checkpoints/long_overlap_first_6_win60_str30_procdiff_data_like_20251123_132100.pt"
 )
 
 
